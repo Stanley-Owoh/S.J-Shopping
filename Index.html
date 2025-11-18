@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">  
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <style>
+  @layer utilities {
+    .underline-anim {
+      width: 0%;
+      height: 3px;
+      background: #080808; /* blue-500 */
+      transition: width 0.4s ease-in-out;
+    }
+
+    .group:hover .underline-anim {
+      width: 100%;
+    }
+  }
+
+    .scrollbar-hide{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+  @keyframes slideRight {
+    0% { transform: translateX(100%); opacity: 1; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+  .animate-slideRight {
+    animation: slideRight 0.4s ease-out forwards;
+  }
+
+</style>
+
+</head>
+<!--CDN TAILWIND-->
+<script src="https://cdn.tailwindcss.com"></script>
+<!--CDN ICON LINK-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<body class="bg-gray-200">
+    <!--TOP HEAD-->
+    <div class="bg-black flex justify-around  text-white h-30 w-100 pr-16 py-2">
+        <p class="hidden m-auto sm:block sm:text-sm lg:text-base">Summer Sale For All Swim Suits And Free Express Delivery-OFF 50%! <a
+                href="#" class="border-white border-b-[0.95px] w-auto">ShopNow</a></p>
+        <p class="sm:hidden md:hidden lg:hidden 2xl:hidden text-xs sm:text-base">Summer Sale! Free Express Delivery -
+            50% Off</p>
+        <p class="text-sm">English ˅</p>
+    </div>
+
+<!--NAV BAR -->
+<div class="bg-gray-50 text-gray-900 sticky top-0 z-50 py-4 px-2 sm:px-4 md:px-4 lg:px-10 border-b border-gray-900 h-fit w-full">
+    <nav class="flex justify-between md:gap-2 lg:gap-8">
+        <h1 class="font-bold text-xl sm:text-lg md:text-xl">Exclusive</h1>
+
+        <!--MENU ICON-->
+       <div class="md:hidden">
+<i id="menuBtn" class="bi bi-list-task"></i>
+</div>
+
+<!--MENU TEXT-->
+<ul id="menu" class="hidden absolute z-50 animate-slideRight md:animate-0 w-1/2 md:w-fit flex-col sm:absolute sm:top-[6.13rem] md:static md:flex md:gap-4 md:text-lg lg:gap-12 lg:text-xl md:flex-row top-10 md:top-0 right-0 md:right-0 space-y-8 md:space-y-0 pb-8 md:pb-0 bg-gray-50 md:bg-transparent p-4 md:p-0 md:rounded-none shadow-md md:shadow-none h-screen md:h-auto">
+    <li class="text-sm font-semibold lg:hover:border-b lg:hover:border-gray-900 sm:text-base lg:text-xl"><a href="#">Home</a></li>
+    <li class="text-sm font-semibold md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl"><a href="#">Contact</a></li>
+    <li class="text-sm font-semibold md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl"><a href="#">About</a></li>
+    <li class="text-sm font-semibold border-b border-gray-400 md:border-0 pb-20 md:pb-0 md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl"><a href="#">SignUp</a></li>
+    <li class="text-sm font-semibold md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl md:hidden"><a href="#"> Womens's Fashion</a></li>
+    <li class="text-sm font-semibold md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl md:hidden"><a href="#">Men's Fashion</a></li>
+    <li class="text-sm font-semibold md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl md:hidden"><a href="#">Electronics</a></li>
+    <li class="text-sm font-semibold md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl md:hidden"><a href="#">Home & Lifestyles</a></li>
+    <li class="text-sm font-semibold md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl md:hidden"><a href="#">Medicine</a></li>
+    <li class="text-sm font-semibold md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl md:hidden"><a href="#">Sports & Outdoors</a></li>
+    <li class="text-sm font-semibold md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl md:hidden"><a href="#">Baby's & Toys</a></li>
+    <li class="text-sm font-semibold md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl md:hidden"><a href="#">Groceries & Pets</a></li>
+        <li class="text-sm font-semibold md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl md:hidden"><a href="#">Health & Beauty</a></li>
+</ul> 
+
+<!--INPUT SEARCH-->
+<div class=" hidden sm:flex md:flex sm:flex-row sm:justify-between sm:gap-8">
+    <form class="flex" action="">
+    <label for="search">
+        <input class="hidden sm:flex sm:focus:border-0 sm:outline-0 sm:pl-2 sm:pr-4 sm:py-1 sm:border-0 sm:bg-gray-300 sm:rounded-md sm:rounded-br-none sm:rounded-tr-none sm:w-auto lg:w-[250px] sm:text-sm lg:text-base" type="search" id="form" placeholder="Looking for something?">
+    </label>
+    <button class="hidden lg:px-2 sm:px-px sm:flex sm:bg-gray-300 sm:rounded-md sm:rounded-bl-none sm:rounded-tl-none sm:flex lg:text-2xl sm:text-base"><i class="bi bi-search sm:text-base lg:text-lg sm:m-auto"></i></button>
+    </form>
+    
+    <!--HEADER ICON-->
+    <div class="hidden sm:flex sm:gap-4 lg:gap-8 sm:text-base lg:text-2xl">
+        <i class="bi bi-heart"></i>
+        <i class="bi bi-cart3"></i>
+    </div>
+</div>
+    </nav>
+</div>
+
+<!--- PRODUCTS AND ADS-->
+<div class=" px-2 md:flex pb-8 md:flex-row md:-m-2 lg:-m-0 justify-between md:pr-4 lg:pr-10 bg bg-white">
+        <ul class="hidden md:flex md:flex-col bg-white md:block md:gap-2 lg:gap-4 md:text-lg lg:text-xl md:w-[200px] lg:w-1/4 border-r border-gray-300 md:pl-0 lg:pl-8 whitespace-nowrap md:pt-4 lg:pt-8">
+            <li class="md:text-lg lg:text-xl font-semibold"><a href="#">Women's Fashion</a></li>
+            <li class="md:text-lg lg:text-xl font-semibold"><a href="#">Men's Fashion</a></li>
+            <li class="md:text-lg lg:text-xl font-semibold"><a href="#">Electronics</a></li>
+            <li class="md:text-lg lg:text-xl font-semibold"><a href="#">Home & Lifestyles</a></li>
+            <li class="md:text-lg lg:text-xl font-semibold"><a href="#">Medicine</a></li>
+            <li class="md:text-lg lg:text-xl font-semibold"><a href="#">Sports & Outdoors</a></li>
+            <li class="md:text-lg lg:text-xl font-semibold"><a href="#">Baby's & Toys</a></li>
+            <li class="md:text-lg lg:text-xl font-semibold"><a href="#">Groceries & Pets</a></li>
+            <li class="md:text-lg lg:text-xl font-semibold"><a href="#">Health & Beauty</a></li>
+        </ul>
+
+    <!--AD IMAGE-->
+    <div class="relative w-full pt-2 md:w-2/3 float-right h-[200px] sm:h-[290px] md:h-[300px] lg:h-[400px] flex bg-white justify-between md:pt-4 lg:pt-8">
+      <div class="flex w-full aspect-video cursor-pointer overflow-x-scroll scroll-smooth snap-x snap-mandatory rounded-md h-full scrollbar-hide">
+        <img id="slide-1" src="/assets/flash sale.jpg" alt="flash sale" class="transition-transform duration-300 hover:scale-105 grow shrink-0 basis-full snap-start w-full object-fill">
+        <img id="slide-2" src="/assets/8k res tv.jpg" alt="flash sale" class="transition-transform duration-300 hover:scale-105 w-full grow shrink-0 basis-full snap-start">
+        <img id="slide-3" src="/assets/earbuds.jpg" alt="flash sale" class="transition-transform duration-300 hover:scale-105 w-full grow shrink-0 basis-full snap-start">
+        <img id="slide-4" src="/assets/free laptop.jpg" alt="flash sale" class="transition-transform duration-300 hover:scale-105 grow shrink-0 basis-full snap-start">
+        <img id="slide-5" src="/assets/samsung televison.jpg" alt="flash sale" class="transition-transform duration-300 hover:scale-105 grow shrink-0 basis-full snap-start w-full">
+        <img id="slide-6" src="/assets/premium.jpg" alt="flash sale" class="transition-transform duration-300 hover:scale-105 grow shrink-0 basis-full snap-start w-fill">
+        <img id="slide-7" src="/assets/second hand.jpeg" alt="flash sale" class="transition-transform duration-300 hover:scale-105 grow shrink-0 basis-full snap-start w-full">
+       <!-- <a class="absolute bottom-32 md:font-medium text-gray-50 bg-blue-500 sm:py-px text-base px-2 sm:text-xl w-fit sm:w-fit ml-4 rounded-md text-center" href="#">Buy Now</a>-->
+      <div  class="p-[5px] sm:p-2 flex gap-2 z-20 ml-4 absolute bottom-2 left-[0%] md:left-[40%] bg-gray-700 rounded-full">
+        <a  class="bg-gray-100 p-px h-[0.4rem] w-[0.4rem] md:h-2 md:w-2 rounded-full opacity-30 hover:opacity-100 transition duration-300 hover:bg-sky-400" href="#slide-1"></a>
+        <a  class="bg-gray-100 p-px h-[0.4rem] w-[0.4rem] md:h-2 md:w-2 rounded-full opacity-30 hover:opacity-100 transition duration-300 hover:bg-sky-400" href="#slide-2"></a>
+        <a  class="bg-gray-100 p-px h-[0.4rem] w-[0.4rem] md:h-2 md:w-2 rounded-full opacity-30 hover:opacity-100 transition duration-300 hover:bg-sky-400" href="#slide-3"></a>
+        <a  class="bg-gray-100 p-px h-[0.4rem] w-[0.4rem] md:h-2 md:w-2 rounded-full opacity-30 hover:opacity-100 transition duration-300 hover:bg-sky-400" href="#slide-4"></a>
+        <a  class="bg-gray-100 p-px h-[0.4rem] w-[0.4rem] md:h-2 md:w-2 rounded-full opacity-30 hover:opacity-100 transition duration-300 hover:bg-sky-400" href="#slide-5"></a>
+        <a  class="bg-gray-100 p-px h-[0.4rem] w-[0.4rem] md:h-2 md:w-2 rounded-full opacity-30 hover:opacity-100 transition duration-300 hover:bg-sky-400" href="#slide-6"></a>
+        <a  class="bg-gray-100 p-px h-[0.4rem] w-[0.4rem] md:h-2 md:w-2 rounded-full opacity-30 hover:opacity-100 transition duration-300 hover:bg-sky-400" href="#slide-7"></a>
+      </div> 
+    </div>
+</div>
+</div>
+<div class="p-2 md:px-4 lg:px-10 w-full flex flex-col gap-4 pt-32 mt-8 pb-8 bg-white">
+    <div class="flex flex-row gap-4">
+ <div class="h-[3rem] w-[1.3rem] bg-red-600 rounded-md p-2" ></div>
+     <p class="text-lg self-center md:text-red-600 md:text-xl font-bold m-au">Today's</p>
+     </div>
+     <div class="flex flex-row gap-4 md:gap-10">
+        <h1 class="text-xl md:text-4xl lg:text-5xl self-center font-semibold">Flash Sales</h1>
+        <div class="md:space-x-2 flex flex-row">
+        <div class="flex flex-col items-center">
+            <p class="text-sm md:text-base lg:text-xl">Days</p>
+            <h1 class="text-xl md:text-2xl lg:text-5xl font-bold">03</h1>
+        </div>
+        <p class="text-xl md:text-3xl text-red-400 font-bold self-end">:</p>
+                <div class="flex flex-col items-center">
+            <p class="text-sm md:text-base lg:text-xl">Hours</p>
+            <h1 class="text-xl md:text-2xl lg:text-5xl font-bold">18</h1>
+        </div>
+        <p class="text-xl text-red-400 md:text-3xl font-bold self-end">:</p>
+                <div class="flex flex-col items-center">
+            <p class="text-sm md:text-base lg:text-xl">Minutes</p>
+            <h1 class="text-xl md:text-2xl lg:text-5xl font-bold font-bold">40</h1>
+        </div>
+        <p class="text-xl md:text-3xl text-red-400 self-end font-bold">:</p>
+                <div class="flex flex-col items-center">
+            <p class="text-sm md:text-base lg:text-xl">Seconds</p>
+            <h1 class="text-xl md:text-2xl lg:text-5xl font-bold font-bold">11</h1>
+        </div>
+        </div>
+     </div>
+ </div>
+
+ <!-- PRODUCTS -->
+  <div class="p-2 md:px-4 lg:px-10 pt-4 flex flex-col gap-4 pb-8 border-b border-gray-400">
+  <div class="bg-white flex flex-row gap-2 p-4 rounded-md overflow-x-scroll scroll-smooth snap-x snap-mandatory scrollbar-hide">
+    
+    <!-- PRODUCT CARD -->
+    <div class="flex-none flex flex-col gap-2 w-[13rem] snap-start rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-40%</p>
+  <img class="object-cover w-full" src="/assets/A17-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-50%</p>
+  <img class="object-cover w-full" src="/assets/A17-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-40%</p>
+  <img class="object-cover w-full" src="/assets/A17-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <img class="object-cover w-full" src="/assets/A17-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-35%</p>
+  <img class="object-cover w-full" src="/assets/A17-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-40%</p>
+  <img class="object-cover w-full" src="/assets/A17-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <img class="object-cover w-full" src="/assets/A17-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <img class="object-cover w-full" src="/assets/A17-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-45%</p>
+  <img class="object-cover w-full" src="/assets/A17-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-30%</p>
+  <img class="object-cover w-full" src="/assets/A17-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <img class="object-cover w-full" src="/assets/A17-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-50%</p>
+  <img class="object-cover w-full" src="/assets/A17-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-30%</p>
+  <img class="object-cover w-full" src="/assets/A17-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-35%</p>
+  <img class="object-cover w-full" src="/assets/A17-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-20%</p>
+  <img class="object-cover w-full" src="/assets/A17-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+  </div>
+  <a href="#" class="bg-red-500 hover:bg-red-400 text-gray-50 text-base rounded-md md:text-xl font-semibold m-auto p-2 md:py-2 md:px-8">View All Products</a>
+</div>
+
+<!-- CATEGORY -->
+ <div class="pl-2 md:px-4 lg:px-10 pt-20">
+ <div class="flex flex-row gap-4">
+ <div class="h-[3rem] w-[1.3rem] bg-red-600 rounded-md p-2" ></div>
+     <p class="text-lg self-center md:text-red-600 md:text-xl font-bold m-au">Categories</p>
+     </div>
+     <h1 class="text-xl md:text-4xl lg:text-5xl self-center font-semibold">Browse By Category</h1>
+     </div>
+
+
+<!-- JAVASCRIPT CODE HERE -->
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const menu = document.getElementById("menu");
+
+  // Toggle menu open/close
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation(); // stop click from triggering the close event
+    menu.classList.toggle("hidden");
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!menu.classList.contains("hidden")) {
+      // if menu is open...
+      const isClickInsideMenu = menu.contains(e.target);
+      const isClickOnBtn = menuBtn.contains(e.target);
+
+      if (!isClickInsideMenu && !isClickOnBtn) {
+        menu.classList.add("hidden");
+      }
+    }
+  });
+</script>
+</body>
+</html>
