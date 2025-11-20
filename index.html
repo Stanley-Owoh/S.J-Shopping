@@ -36,6 +36,33 @@
     animation: slideRight 0.4s ease-out forwards;
   }
 
+#arrival{
+    display: grid;
+    background-color: green;
+    gap: 8;
+    grid-template-columns: repeat(2, 1fr) 250px 250px;
+    grid-template-rows:  250px 250px;
+    grid-template-areas: 
+    "ps5 ps5 woman woman"
+    "ps5 ps5 jbl perfume";
+}
+
+#play{
+    grid-area: ps5;
+    margin-top: 10px;
+}
+
+#lady{
+    grid-area: woman;
+}
+
+#speaker{
+    grid-area: jbl;
+}
+
+#perf{
+    grid-area: perfume;
+}
 </style>
 
 </head>
@@ -46,16 +73,15 @@
 
 <body class="bg-gray-200">
     <!--TOP HEAD-->
-    <div class="bg-black flex justify-around  text-white h-30 w-100 pr-16 py-2">
+    <div class="bg-black flex justify-between  text-white h-30 w-100 px-2 md:pr-10 py-2">
         <p class="hidden m-auto sm:block sm:text-sm lg:text-base">Summer Sale For All Swim Suits And Free Express Delivery-OFF 50%! <a
                 href="#" class="border-white border-b-[0.95px] w-auto">ShopNow</a></p>
-        <p class="sm:hidden md:hidden lg:hidden 2xl:hidden text-xs sm:text-base">Summer Sale! Free Express Delivery -
-            50% Off</p>
+        <p class="sm:hidden md:hidden lg:hidden 2xl:hidden text-xs sm:text-base">Summer Sale! Free Express Delivery -50% Off</p>
         <p class="text-sm">English ˅</p>
     </div>
 
 <!--NAV BAR -->
-<div class="bg-gray-50 text-gray-900 sticky top-0 z-50 py-4 px-2 sm:px-4 md:px-4 lg:px-10 border-b border-gray-900 h-fit w-full">
+<div class="bg-gray-50 text-gray-900 sticky top-0 z-50 py-4 px-2 sm:px-4 lg:px-10 border-b border-gray-900 h-fit w-full">
     <nav class="flex justify-between md:gap-2 lg:gap-8">
         <h1 class="font-bold text-xl sm:text-lg md:text-xl">Exclusive</h1>
 
@@ -65,7 +91,7 @@
 </div>
 
 <!--MENU TEXT-->
-<ul id="menu" class="hidden absolute z-50 animate-slideRight md:animate-0 w-1/2 md:w-fit flex-col sm:absolute sm:top-[6.13rem] md:static md:flex md:gap-4 md:text-lg lg:gap-12 lg:text-xl md:flex-row top-10 md:top-0 right-0 md:right-0 space-y-8 md:space-y-0 pb-8 md:pb-0 bg-gray-50 md:bg-transparent p-4 md:p-0 md:rounded-none shadow-md md:shadow-none h-screen md:h-auto">
+<ul id="menu" class="hidden absolute z-50 animate-slideRight md:animate-none md:animate-0 w-[65%] md:w-fit flex-col sm:absolute sm:top-[6.13rem] md:static md:flex md:gap-4 md:text-lg lg:gap-12 lg:text-xl md:flex-row top-10 md:top-0 right-0 md:right-0 space-y-8 md:space-y-0 pb-8 md:pb-0 bg-gray-50 md:bg-transparent p-8 md:p-0 md:rounded-none shadow-md md:shadow-none h-screen md:h-auto">
     <li class="text-sm font-semibold lg:hover:border-b lg:hover:border-gray-900 sm:text-base lg:text-xl"><a href="#">Home</a></li>
     <li class="text-sm font-semibold md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl"><a href="#">Contact</a></li>
     <li class="text-sm font-semibold md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl"><a href="#">About</a></li>
@@ -136,7 +162,7 @@
     </div>
 </div>
 </div>
-<div class="p-2 md:px-4 lg:px-10 w-full flex flex-col gap-4 pt-32 mt-8 pb-8 bg-white">
+<div class="p-2 md:px-4 lg:px-10 w-full flex flex-col gap-4 pt-16 md:pt-32 mt-8 pb-8 bg-white">
     <div class="flex flex-row gap-4">
  <div class="h-[3rem] w-[1.3rem] bg-red-600 rounded-md p-2" ></div>
      <p class="text-lg self-center md:text-red-600 md:text-xl font-bold m-au">Today's</p>
@@ -168,7 +194,7 @@
  </div>
 
  <!-- PRODUCTS -->
-  <div class="p-2 md:px-4 lg:px-10 pt-4 flex flex-col gap-4 pb-8 border-b border-gray-400">
+  <div class="p-2 md:px-4 lg:px-10 pt-4 flex flex-col gap-4 pb-4">
   <div class="bg-white flex flex-row gap-2 p-4 rounded-md overflow-x-scroll scroll-smooth snap-x snap-mandatory scrollbar-hide">
     
     <!-- PRODUCT CARD -->
@@ -296,14 +322,442 @@
 </div>
 
 <!-- CATEGORY -->
- <div class="pl-2 md:px-4 lg:px-10 pt-20">
+ <div class="pl-2 flex flex-col gap-4 md:px-4 lg:px-10 pt-20 w-full pb-8 bg-white">
  <div class="flex flex-row gap-4">
  <div class="h-[3rem] w-[1.3rem] bg-red-600 rounded-md p-2" ></div>
      <p class="text-lg self-center md:text-red-600 md:text-xl font-bold m-au">Categories</p>
      </div>
-     <h1 class="text-xl md:text-4xl lg:text-5xl self-center font-semibold">Browse By Category</h1>
-     </div>
+     <h1 class="text-xl md:text-4xl font-semibold">Browse By Category</h1>
+ </div>
+     <!-- CATEGORY CARDS -->
+      <div class="w-full mt-4 py-4 px-2 sm:px-4 pb-8 md:px-4 lg:px-10">
+      <div class="bg-white flex flex-row gap-2 p-2 py-4 justify-center align-center md:px-4 md:flex flex-wrap md:justify-between h-fit w-full md:gap-4 md:flex-nowrap">
+        <a href=""><img class=" w-[27.7vw] sm:w-[29vw] h-40 md:h-[10vh] lg:h-[40vh] md:w-[14vw]" src="./Android ads.png" alt="Android"></a>
+        <a href=""><img class=" w-[27.7vw] h-40 sm:w-[29vw] md:h-[10vh] lg:h-[40vh] md:w-[14vw]" src="./IPhone ads.png" alt="IPhone"></a>
+        <a href=""><img class="  w-[27.7vw] h-40 sm:w-[29vw] md:h-[10vh] lg:h-[40vh] md:w-[14vw] " src="./Tablet ads.png" alt="Tablet"></a>
+        <a href=""><img class="  w-[27.7vw] h-40 sm:w-[29vw] md:h-[10vh] lg:h-[40vh] md:w-[14vw]" src="./Fold-Phones ads.png" alt="Fold-Phones"></a>
+        <a href=""><img class="  w-[27.7vw] h-40 sm:w-[29vw] md:h-[10vh] lg:h-[40vh] md:w-[14vw]" src="./Renewed-Phones ads.png" alt="Renewed-Phones"></a>
+        <a href=""><img class=" w-[27.7vw] h-40 sm:w-[29vw] md:h-[10vh] lg:h-[40vh] md:w-[14vw]" src="./Accessories ads.png" alt="Accessories"></a>
+    </div>
+    </div>
 
+<!-- PRODUCTS 2 -->
+  <div class="p-2 md:px-4 lg:px-10 flex flex-col gap-4 pb-4">
+  <div class="bg-white flex flex-row gap-2 p-4 rounded-md overflow-x-scroll scroll-smooth snap-x snap-mandatory scrollbar-hide">
+    
+    <!-- PRODUCT CARD 2 -->
+    <div class="flex-none flex flex-col gap-2 h-[320px] w-[13rem] snap-start rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <img class="object-cover w-full" src="/blender.webp" alt="products">
+  <p class="text-base md:text-lg font-semibold">Blender</p>
+  <p class="text-base md:text-xl font-bold">$70.00</p>
+</div>
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-50%</p>
+  <img class="object-cover w-full" src="/cosmetics.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Cosmetics Beauty Kit</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-40%</p>
+  <img class="object-cover w-full" src="/Dell latitude.avif" alt="products">
+  <p class="text-base md:text-lg font-semibold">DELL Latitude</p>
+  <p class="text-base md:text-xl font-bold">$810.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <img class="object-cover w-full" src="/Generic 7days kings of ginger hair growth oil.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Kings of Ginger</p>
+  <p class="text-base md:text-xl font-bold">8.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <img class="object-cover w-full" src="/meat.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Meat Steak</p>
+  <p class="text-base md:text-xl font-bold">$20.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-40%</p>
+  <img class="object-cover w-full" src="/HP laptop.avif" alt="products">
+  <p class="text-base md:text-lg font-semibold">HP Laptop</p>
+  <p class="text-base md:text-xl font-bold">$770.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <img class="object-contain w-full h-1/2" src="/MIL6090 Bluetooth Nultimedia speaker.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">MIL6090 Bluetooth Nultimedia speaker</p>
+  <p class="text-base md:text-xl font-bold">$190.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <img class="object-contain w-full h-1/2" src="/screen protector for S26U.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">S26U Screen Glass Protector</p>
+  <p class="text-base md:text-xl font-bold">$10.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-45%</p>
+  <img class="object-cover w-full" src="/standing fan.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Standing Fan</p>
+  <p class="text-base md:text-xl font-bold">$50.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-30%</p>
+  <img class="object-contain w-full h-1/2" src="/women cloth.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Women Cloth</p>
+  <p class="text-base md:text-xl font-bold">$20.00</p>
+</div>
+
+
+<div class="flex-none flex h-[320px] flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <img class="object-cover w-full" src="/sony 5 2 channel.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Sony 5 2 Channel</p>
+  <p class="text-base md:text-xl font-bold">$120.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-30%</p>
+  <img class="object-cover w-full h-1/2" src="/tecno_spark_40_pro_plus-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Tecno spark 40 PRO+</p>
+  <p class="text-base md:text-xl font-bold">$180.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <img class="object-cover w-full h-1/2" src="/unisex up and down.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Unisex up and down wears</p>
+  <p class="text-base md:text-xl font-bold">$50.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <img class="object-cover w-full h-1/2" src="/tracksuits.webp" alt="products">
+  <p class="text-base md:text-lg font-semibold">Tracksuits</p>
+  <p class="text-base md:text-xl font-bold">$30.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-20%</p>
+  <img class="object-cover w-full h-1/2" src="/tecno_camon_40_pro-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Tecno Camon 40 PRO 256gb</p>
+  <p class="text-base md:text-xl font-bold">$240.00</p>
+</div>
+
+
+  </div>
+  <a href="#" class="bg-red-500 hover:bg-red-400 text-gray-50 text-base rounded-md md:text-xl font-semibold m-auto p-2 md:py-2 md:px-8">View All Products</a>
+</div>
+
+<!-- CATEGORY -->
+ <div class="pl-2 flex flex-col gap-4 md:px-4 lg:px-10 pt-20 w-full pb-8 bg-white">
+ <div class="flex flex-row gap-4">
+ <div class="h-[3rem] w-[1.3rem] bg-red-600 rounded-md p-2" ></div>
+     <p class="text-lg self-center md:text-red-600 md:text-xl font-bold m-au">This Month</p>
+     </div>
+     <h1 class="text-xl md:text-4xl font-semibold">Best Selling Products</h1>
+ </div>
+
+ <!-- PRODUCT 3-->
+<div class="px-2 pt-4 md:px-4 lg:px-10 flex flex-col gap-4 pb-4">
+    <div class="w-full rounded-md h-fit bg-white pb-8">
+  <div class="bg-transparent flex flex-row gap-2 p-4 rounded-md overflow-x-scroll scroll-smooth snap-x snap-mandatory scrollbar-hide">
+    
+    <!-- PRODUCT CARD 3 -->
+    <div class="flex-none flex flex-col gap-2 h-[320px] w-[13rem] snap-start rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <img class="object-cover w-full" src="/blender.webp" alt="products">
+  <p class="text-base md:text-lg font-semibold">Blender</p>
+  <p class="text-base md:text-xl font-bold">$70.00</p>
+</div>
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-50%</p>
+  <img class="object-cover w-full" src="/cosmetics.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Cosmetics Beauty Kit</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-40%</p>
+  <img class="object-cover w-full" src="/Dell latitude.avif" alt="products">
+  <p class="text-base md:text-lg font-semibold">DELL Latitude</p>
+  <p class="text-base md:text-xl font-bold">$810.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <img class="object-cover w-full" src="/Generic 7days kings of ginger hair growth oil.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Kings of Ginger</p>
+  <p class="text-base md:text-xl font-bold">8.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <img class="object-cover w-full" src="/meat.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Meat Steak</p>
+  <p class="text-base md:text-xl font-bold">$20.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-40%</p>
+  <img class="object-cover w-full" src="/HP laptop.avif" alt="products">
+  <p class="text-base md:text-lg font-semibold">HP Laptop</p>
+  <p class="text-base md:text-xl font-bold">$770.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <img class="object-contain w-full h-1/2" src="/MIL6090 Bluetooth Nultimedia speaker.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">MIL6090 Bluetooth Nultimedia speaker</p>
+  <p class="text-base md:text-xl font-bold">$190.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <img class="object-contain w-full h-1/2" src="/screen protector for S26U.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">S26U Screen Glass Protector</p>
+  <p class="text-base md:text-xl font-bold">$10.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-45%</p>
+  <img class="object-cover w-full" src="/standing fan.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Standing Fan</p>
+  <p class="text-base md:text-xl font-bold">$50.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-30%</p>
+  <img class="object-contain w-full h-1/2" src="/women cloth.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Women Cloth</p>
+  <p class="text-base md:text-xl font-bold">$20.00</p>
+</div>
+
+
+<div class="flex-none flex h-[320px] flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <img class="object-cover w-full" src="/sony 5 2 channel.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Sony 5 2 Channel</p>
+  <p class="text-base md:text-xl font-bold">$120.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-30%</p>
+  <img class="object-cover w-full h-1/2" src="/tecno_spark_40_pro_plus-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Tecno spark 40 PRO+</p>
+  <p class="text-base md:text-xl font-bold">$180.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <img class="object-cover w-full h-1/2" src="/unisex up and down.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Unisex up and down wears</p>
+  <p class="text-base md:text-xl font-bold">$50.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <img class="object-cover w-full h-1/2" src="/tracksuits.webp" alt="products">
+  <p class="text-base md:text-lg font-semibold">Tracksuits</p>
+  <p class="text-base md:text-xl font-bold">$30.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-20%</p>
+  <img class="object-cover w-full h-1/2" src="/tecno_camon_40_pro-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Tecno Camon 40 PRO 256gb</p>
+  <p class="text-base md:text-xl font-bold">$240.00</p>
+</div>
+  </div>
+
+
+<!-- PRODUCT 4 -->
+  <div class="bg-white flex flex-row gap-2 p-4 rounded-md overflow-x-scroll scroll-smooth snap-x snap-mandatory scrollbar-hide">
+    
+    <!-- PRODUCT CARD 4 -->
+    <div class="flex-none flex flex-col gap-2 h-[320px] w-[13rem] snap-start rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <img class="object-cover w-full" src="/blender.webp" alt="products">
+  <p class="text-base md:text-lg font-semibold">Blender</p>
+  <p class="text-base md:text-xl font-bold">$70.00</p>
+</div>
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-50%</p>
+  <img class="object-cover w-full" src="/cosmetics.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Cosmetics Beauty Kit</p>
+  <p class="text-base md:text-xl font-bold">$150.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-40%</p>
+  <img class="object-cover w-full" src="/Dell latitude.avif" alt="products">
+  <p class="text-base md:text-lg font-semibold">DELL Latitude</p>
+  <p class="text-base md:text-xl font-bold">$810.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <img class="object-cover w-full" src="/Generic 7days kings of ginger hair growth oil.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Kings of Ginger</p>
+  <p class="text-base md:text-xl font-bold">8.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <img class="object-cover w-full" src="/meat.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Meat Steak</p>
+  <p class="text-base md:text-xl font-bold">$20.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-40%</p>
+  <img class="object-cover w-full" src="/HP laptop.avif" alt="products">
+  <p class="text-base md:text-lg font-semibold">HP Laptop</p>
+  <p class="text-base md:text-xl font-bold">$770.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <img class="object-contain w-full h-1/2" src="/MIL6090 Bluetooth Nultimedia speaker.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">MIL6090 Bluetooth Nultimedia speaker</p>
+  <p class="text-base md:text-xl font-bold">$190.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <img class="object-contain w-full h-1/2" src="/screen protector for S26U.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">S26U Screen Glass Protector</p>
+  <p class="text-base md:text-xl font-bold">$10.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-45%</p>
+  <img class="object-cover w-full" src="/standing fan.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Standing Fan</p>
+  <p class="text-base md:text-xl font-bold">$50.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-30%</p>
+  <img class="object-contain w-full h-1/2" src="/women cloth.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Women Cloth</p>
+  <p class="text-base md:text-xl font-bold">$20.00</p>
+</div>
+
+
+<div class="flex-none flex h-[320px] flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <img class="object-cover w-full" src="/sony 5 2 channel.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Sony 5 2 Channel</p>
+  <p class="text-base md:text-xl font-bold">$120.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-30%</p>
+  <img class="object-cover w-full h-1/2" src="/tecno_spark_40_pro_plus-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Tecno spark 40 PRO+</p>
+  <p class="text-base md:text-xl font-bold">$180.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <img class="object-cover w-full h-1/2" src="/unisex up and down.jpg" alt="products">
+  <p class="text-base md:text-lg font-semibold">Unisex up and down wears</p>
+  <p class="text-base md:text-xl font-bold">$50.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <img class="object-cover w-full h-1/2" src="/tracksuits.webp" alt="products">
+  <p class="text-base md:text-lg font-semibold">Tracksuits</p>
+  <p class="text-base md:text-xl font-bold">$30.00</p>
+</div>
+
+
+<div class="flex-none flex flex-col h-[320px] gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-20%</p>
+  <img class="object-cover w-full h-1/2" src="/tecno_camon_40_pro-removebg-preview.png" alt="products">
+  <p class="text-base md:text-lg font-semibold">Tecno Camon 40 PRO 256gb</p>
+  <p class="text-base md:text-xl font-bold">$240.00</p>
+</div>
+
+
+  </div>
+    </div>
+      <a href="#" class="bg-red-500 hover:bg-red-400 text-gray-50 text-base rounded-md md:text-xl font-semibold m-auto p-2 md:py-2 md:px-8">View All Products</a>
+</div>
+
+<!-- CATEGORY -->
+ <div class="pl-2 flex flex-col gap-4 md:px-4 lg:px-10 pt-20 w-full pb-8 bg-white">
+ <div class="flex flex-row gap-4">
+ <div class="h-[3rem] w-[1.3rem] bg-red-600 rounded-md p-2" ></div>
+     <p class="text-lg self-center md:text-red-600 md:text-xl font-bold m-au">Featured</p>
+     </div>
+     <h1 class="text-xl md:text-4xl lg:text-4xl font-semibold">New Arrival</h1>
+ </div>
+
+<!-- NEW ARRIVAL -->
+<div class="px-2 md:px-4 lg:px-10 py-4">
+    <div id="arrival" class="gap-4 bg-white">
+        <div id="play" class="h-[500px]">
+        <img class="object-cover h-full w-full" src="/ps5 ads.png">
+        </div>
+        <div id="lady" class="h-[250px] ">
+        <img class="object-cover h-full w-full" src="/black dress ads.jpeg">
+        </div>
+        <div id="speaker">
+        <img class="object-cover h-full w-full" src="/jbl.jpeg">
+        </div>
+        <div id="perf" class="h-[250px]">
+        <img class="object-cover h-full w-full" src="/perfume ads.png">
+        </div>
+    </div>
+</div>
 
 <!-- JAVASCRIPT CODE HERE -->
 <script>
