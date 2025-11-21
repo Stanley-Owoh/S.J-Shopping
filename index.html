@@ -73,7 +73,7 @@
 
 <body class="bg-gray-200">
     <!--TOP HEAD-->
-    <div class="bg-black flex justify-between  text-white h-30 w-100 px-2 md:pr-10 py-2">
+    <div class="bg-black flex justify-around md:justify-between  text-white h-30 w-100 px-2 md:pr-10 py-2">
         <p class="hidden m-auto sm:block sm:text-sm lg:text-base">Summer Sale For All Swim Suits And Free Express Delivery-OFF 50%! <a
                 href="#" class="border-white border-b-[0.95px] w-auto">ShopNow</a></p>
         <p class="sm:hidden md:hidden lg:hidden 2xl:hidden text-xs sm:text-base">Summer Sale! Free Express Delivery -50% Off</p>
@@ -85,13 +85,9 @@
     <nav class="flex justify-between md:gap-2 lg:gap-8">
         <h1 class="font-bold text-xl sm:text-lg md:text-xl">Exclusive</h1>
 
-        <!--MENU ICON-->
-       <div class="md:hidden">
-<i id="menuBtn" class="bi bi-list-task"></i>
-</div>
 
 <!--MENU TEXT-->
-<ul id="menu" class="hidden absolute z-50 animate-slideRight md:animate-none md:animate-0 w-[65%] md:w-fit flex-col sm:absolute sm:top-[6.13rem] md:static md:flex md:gap-4 md:text-lg lg:gap-12 lg:text-xl md:flex-row top-10 md:top-0 right-0 md:right-0 space-y-8 md:space-y-0 pb-8 md:pb-0 bg-gray-50 md:bg-transparent p-8 md:p-0 md:rounded-none shadow-md md:shadow-none h-screen md:h-auto">
+<ul id="menu" class="hidden absolute top-[3.8rem] overflow-y-auto lg:top-0 bg-red-400 z-50 animate-slideRight md:animate-none md:animate-0 w-[65%] md:w-fit flex-col md:static md:flex md:gap-4 md:text-lg lg:gap-12 lg:text-xl md:flex-row top-10 md:top-0 right-0 md:right-0 space-y-8 md:space-y-0 pb-8 md:pb-0 bg-gray-50 md:bg-transparent p-8 md:p-0 md:rounded-none shadow-md md:shadow-none h-screen md:h-auto">
     <li class="text-sm font-semibold lg:hover:border-b lg:hover:border-gray-900 sm:text-base lg:text-xl"><a href="#">Home</a></li>
     <li class="text-sm font-semibold md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl"><a href="#">Contact</a></li>
     <li class="text-sm font-semibold md:hover:border-b md:hover:border-gray-900 sm:text-base lg:text-xl"><a href="#">About</a></li>
@@ -108,14 +104,19 @@
 </ul> 
 
 <!--INPUT SEARCH-->
-<div class=" hidden sm:flex md:flex sm:flex-row sm:justify-between sm:gap-8">
-    <form class="flex" action="">
+<div class="sm:flex sm:flex-row sm:justify-between sm:gap-8">
+    <form class="hidden flex sm:flex " action="">
     <label for="search">
         <input class="hidden sm:flex sm:focus:border-0 sm:outline-0 sm:pl-2 sm:pr-4 sm:py-1 sm:border-0 sm:bg-gray-300 sm:rounded-md sm:rounded-br-none sm:rounded-tr-none sm:w-auto lg:w-[250px] sm:text-sm lg:text-base" type="search" id="form" placeholder="Looking for something?">
     </label>
     <button class="hidden lg:px-2 sm:px-px sm:flex sm:bg-gray-300 sm:rounded-md sm:rounded-bl-none sm:rounded-tl-none sm:flex lg:text-2xl sm:text-base"><i class="bi bi-search sm:text-base lg:text-lg sm:m-auto"></i></button>
     </form>
     
+<!--MENU ICON-->
+       <div class="md:hidden">
+<i id="menuBtn" class="bi bi-list-task"></i>
+</div>
+
     <!--HEADER ICON-->
     <div class="hidden sm:flex sm:gap-4 lg:gap-8 sm:text-base lg:text-2xl">
         <i class="bi bi-heart"></i>
@@ -742,19 +743,40 @@
  </div>
 
 <!-- NEW ARRIVAL -->
-<div class="px-2 md:px-4 lg:px-10 py-4">
+<!-- <div class="px-2 md:px-4 lg:px-10 py-4 w-full overflow-x-hidden">
     <div id="arrival" class="gap-4 bg-white">
-        <div id="play" class="h-[500px]">
+        <div id="play" class="h-[100px] lg:h-[500px] w-[100px]">
         <img class="object-cover h-full w-full" src="/ps5 ads.png">
         </div>
-        <div id="lady" class="h-[250px] ">
+        <div id="lady" class="h-[100px] lg:h-[500px] w-[100px]">
         <img class="object-cover h-full w-full" src="/black dress ads.jpeg">
         </div>
-        <div id="speaker">
+        <div id="speaker" class="h-[100px] lg:h-[500px] w-[100px]">
         <img class="object-cover h-full w-full" src="/jbl.jpeg">
         </div>
-        <div id="perf" class="h-[250px]">
+        <div id="perf" class="h-[100px] lg:h-[500px] w-[100px]">
         <img class="object-cover h-full w-full" src="/perfume ads.png">
+        </div>
+    </div>
+</div> -->
+
+<div class="bg-blue-500 w-full h-fit">
+    <div class="p-2 gap-2 h-fit flex flex-row">
+        <div class="col-span-2 row-span-2">
+        <img class="object-cover w-full h-[20.5rem] sm:w-[20rem] md:h-[28.5rem] lg:w-[40rem] lg:w-[30rem]" src="/ps5 ads.png">
+        </div>
+        <div class="flex flex-col gap-2">
+            <div class="col-span-3 row-span-1">
+        <img class="object-cover w-[15rem] h-[10rem] sm:w-[18.5rem] md:w-[25rem] md:h-[14rem]" src="/women black ads.jpeg">
+        </div>
+        <div class="flex flex-row gap-2">
+        <div class="col-span-1 row-span-1">
+        <img class="object-cover w-[7.5rem] h-[10rem] sm:w-[9rem] md:h-[14rem] md:w-[13rem]" src="/jbl.jpeg">
+        </div>
+        <div class="col-span-1 row-span-1">
+        <img class="object-cover w-[7.5rem] h-[10rem] sm:w-[9rem] md:h-[14rem] md:w-[10rem]" src="/perfume ads.png">
+        </div>
+        </div>
         </div>
     </div>
 </div>
