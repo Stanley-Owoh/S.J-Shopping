@@ -166,20 +166,19 @@
 
 <div class="w-full flex justify-around justify-center align-center items-center">
     <img src="shop cart.png" class=" w-2/5 h-[84vh] hidden lg:flex">
-    <div class="flex flex-col m-auto space-y-4 p-4">
-        <h1 class="text-3xl font-semibold">Create an account</h1>
+    <div class="flex flex-col m-auto space-y-4 p-4 w-[18rem] lg:w-[22rem]">
+        <h1 class="text-3xl font-semibold">Login</h1>
         <p class="text-base ">Enter your details below</p>
-        <div class="flex flex-col space-y-4 w-[22rem]"> 
-            <input class="text-base p-2 outline-0 focus:outline-0 bg-transparent border-b border-gray-400" type="text" placeholder="Name" required>
+        <div class="flex flex-col space-y-4"> 
             <div class="flex flex-col space-y-0">
-            <input class="text-base p-2 outline-0 focus:outline-0 bg-transparent border-b border-gray-400" type="email" id="email" placeholder="Enter email" required>
+            <input class="text-base p-2 outline-0 focus:outline-0 bg-transparent border-b border-gray-400" type="email" id="email" placeholder="Enter email or username" required>
             <p id="message" class=""></p>
             </div>
             <div class="flex flex-col space-y-0">
             <input class="text-base p-2 outline-0 focus:outline-0 bg-transparent border-b border-gray-400" type="password" id="password" placeholder="Enter 6-character password" maxlength="22" required>
             <p id="passmsg"></p>
             </div>
-            <button class="font-semibold text-base text-gray-50 p-2 bg-red-600 rounded-md transition-all duration-300 ease-in-out hover:bg-red-500 cursor-pointer" type="button" onclick="verify()" >Create Account</button>
+            <button class="font-semibold text-base text-gray-50 p-2 bg-red-600 rounded-md transition-all duration-300 ease-in-out hover:bg-red-500 cursor-pointer" type="button" onclick="verify()" >Login</button>
             <div class="flex flex-row justify-between">   
                 <a class="text-blue-500 text-sm border-b border-blue-500 lg:border-0 lg:hover:border-b lg:hover:border-blue-500" href="SignUp.html">Create New Account</a>
                 <a class="text-red-500 text-sm border-b border-red-500 lg:border-0 lg:hover:border-b lg:hover:border-red-500" href="#">Forgot Password</a>
@@ -218,7 +217,7 @@
     }
 
     // VERIFY ACCOUNT
-    verifyaccount.innerHTML = "";
+    verifyaccount.innerHTML = "Welcome Back!";
     verifyaccount.style.color = "green";
 
     setTimeout(() => {
