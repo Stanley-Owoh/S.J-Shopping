@@ -34,7 +34,7 @@
     </li>
 
     <li class="text-sm font-semibold sm:text-base lg:text-xl lg:hover:border-b lg:hover:border-gray-900">
-        <a href="Store.html" class="block w-full">Store</a>
+        <a href="Login.html" class="block w-full">Store</a>
     </li>
 
     <li class="text-sm md:hidden font-semibold sm:text-base lg:text-xl lg:hover:border-b lg:hover:border-gray-900">
@@ -150,19 +150,19 @@
     <label for="search">
         <input class="hidden sm:flex sm:focus:border-0 sm:outline-0 sm:pl-2 sm:pr-4 sm:py-1 sm:border-0 sm:bg-gray-300 sm:rounded-md sm:rounded-br-none sm:rounded-tr-none sm:w-auto lg:w-[250px] sm:text-sm lg:text-base" type="search" id="form" placeholder="Looking for something?">
     </label>
-    <button class="hidden lg:px-2 sm:px-px sm:flex sm:bg-gray-300 sm:rounded-md sm:rounded-bl-none sm:rounded-tl-none lg:text-2xl sm:text-base"><i class="bi bi-search sm:text-base lg:text-lg sm:m-auto"></i></button>
+    <button class="hidden lg:px-2 sm:px-px sm:h-fit sm:flex sm:bg-gray-300 sm:rounded-md sm:rounded-bl-none sm:rounded-tl-none"><i class="bi bi-search sm:text-xl lg:text-2xl sm:m-auto"></i></button>
     </form>
     
 <!--MENU ICON-->
        <div class="md:hidden">
-<i id="menuBtn" class="bi bi-list-task"></i>
+<i id="menuBtn" class="bi bi-list-task cursor-pointer font-bold text-2xl"></i>
 
     </nav>
 </div>
 
-<div class="w-full flex justify-around justify-center align-center items-center px-2 pt-10 lg:px-0 ">
+<div class="w-full flex justify-around justify-center align-center items-center px-2 pt-10 lg:pt-0 lg:px-0 ">
     <img src="shop cart.png" class=" w-2/5 h-[84vh] hidden lg:flex">
-    <div class="flex flex-col m-auto space-y-4 p-4 w-[20rem] lg:w-[22rem]">
+    <div class="flex flex-col m-auto space-y-4 p-4 w-[20rem] sm:w-[25rem]">
         <h1 class="text-3xl font-semibold">Create an account</h1>
         <p class="text-base ">Enter your details below</p>
         <div class="flex flex-col space-y-4"> 
@@ -175,7 +175,7 @@
             <input class="text-base p-2 outline-0 focus:outline-0 bg-transparent border-b border-gray-400" type="password" id="password" placeholder="Enter 6-character password" maxlength="22" required>
             <p id="passmsg"></p>
             </div>
-            <button class="font-semibold text-base text-gray-50 p-2 bg-red-600 rounded-md transition-all duration-300 ease-in-out hover:bg-red-500 cursor-pointer" type="button" onclick="verify()" >Create Account</button>
+            <button class="font-semibold text-base text-gray-50 p-2 bg-red-600 rounded-md transition-all duration-300 ease-in-out hover:bg-red-500 active:bg-red-400 cursor-pointer" type="button" onclick="verify()" >Create Account</button>
             <div class="flex flex-row space-x-2">            
                 <p class="text-base">Already have an acoount?</p> 
                 <a class="text-base text-blue-500" href="Login.html">Login</a>
@@ -186,7 +186,33 @@
 </div>
 </body>
 <script>
-    function verify() {
+    //DROPDOWN
+  const menuBtn = document.getElementById("menuBtn");
+  const menu = document.getElementById("menu");
+  menuBtn.style.fontSize = ""
+
+  // Toggle menu open/close
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation(); // stop click from triggering the close event
+    menu.classList.toggle("hidden");
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!menu.classList.contains("hidden")) {
+      // if menu is open...
+      const isClickInsideMenu = menu.contains(e.target);
+      const isClickOnBtn = menuBtn.contains(e.target);
+
+      if (!isClickInsideMenu && !isClickOnBtn) {
+        menu.classList.add("hidden");
+      }
+    }
+  });
+
+
+  /* VERIFY LOGIN CODE */
+  function verify() {
     const confirm = document.getElementById("message")
     const passmsg = document.getElementById("passmsg")
     const verifyaccount = document.getElementById("verifyaccount")
@@ -221,5 +247,6 @@
         window.location.href = "Store.html";
     }, 1000);
     }
+
 </script>
 </html>

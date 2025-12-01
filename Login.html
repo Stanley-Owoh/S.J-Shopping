@@ -34,11 +34,7 @@
     </li>
 
     <li class="text-sm font-semibold sm:text-base lg:text-xl lg:hover:border-b lg:hover:border-gray-900">
-        <a href="Store.html" class="block w-full">Store</a>
-    </li>
-
-    <li class="text-sm font-semibold sm:text-base lg:text-xl lg:hover:border-b lg:hover:border-gray-900">
-        <a href="#" class="block w-full">SignUp</a>
+        <a href="Login.html" class="block w-full">Store</a>
     </li>
 
     <li class="text-sm md:hidden font-semibold sm:text-base lg:text-xl lg:hover:border-b lg:hover:border-gray-900">
@@ -152,77 +148,41 @@
 <div class="sm:flex sm:flex-row sm:justify-between sm:gap-8">
     <form class="hidden flex sm:flex " action="">
     <label for="search">
-        <input class="hidden sm:flex sm:focus:border-0 sm:outline-0 sm:pl-2 sm:pr-4 sm:py-1 sm:border-0 sm:bg-gray-300 sm:rounded-md sm:rounded-br-none sm:rounded-tr-none sm:w-auto lg:w-[250px] sm:text-sm lg:text-base" type="search" id="form" placeholder="Looking for something?">
+        <input class="hidden h-1/1 sm:flex sm:focus:border-0 sm:outline-0 sm:pl-2 sm:pr-4 sm:py-1 sm:border-0 sm:bg-gray-300 sm:rounded-md sm:rounded-br-none sm:rounded-tr-none sm:w-auto lg:w-[250px] sm:text-sm lg:text-base" type="search" id="form" placeholder="Looking for something?">
     </label>
-    <button class="hidden lg:px-2 sm:px-px sm:flex sm:bg-gray-300 sm:rounded-md sm:rounded-bl-none sm:rounded-tl-none lg:text-2xl sm:text-base"><i class="bi bi-search sm:text-base lg:text-lg sm:m-auto"></i></button>
+    <button class="hidden sm:h-fit lg:px-2 sm:px-2 sm:flex sm:bg-gray-300 sm:rounded-md sm:rounded-bl-none sm:rounded-tl-none lg:text-2xl"><i class="bi bi-search sm:text-xl lg:text-2xl sm:m-auto"></i></button>
     </form>
     
 <!--MENU ICON-->
        <div class="md:hidden">
-<i id="menuBtn" class="bi bi-list-task"></i>
+<i id="menuBtn" class="bi bi-list-task font-bold text-2xl cursor-pointer"></i>
 
     </nav>
 </div>
 
-<div class="w-full flex justify-around justify-center align-center items-center">
+<div class="w-full flex justify-around justify-center align-center items-center px-2 pt-10 lg:pt-0 lg:px-0">
     <img src="shop cart.png" class=" w-2/5 h-[84vh] hidden lg:flex">
     <div class="flex flex-col m-auto space-y-4 p-4 w-[20rem] lg:w-[22rem]">
         <h1 class="text-3xl font-semibold">Login</h1>
         <p class="text-base ">Enter your details below</p>
         <div class="flex flex-col space-y-4"> 
             <div class="flex flex-col space-y-0">
-            <input class="text-base p-2 outline-0 focus:outline-0 bg-transparent border-b border-gray-400" type="email" id="email" placeholder="Enter email or username" required>
+            <input class="text-base p-2 outline-0 focus:outline-0 bg-transparent border-b border-gray-400" type="email" id="email" placeholder="Enter email" required>
             <p id="message" class=""></p>
             </div>
             <div class="flex flex-col space-y-0">
             <input class="text-base p-2 outline-0 focus:outline-0 bg-transparent border-b border-gray-400" type="password" id="password" placeholder="Enter 6-character password" maxlength="22" required>
             <p id="passmsg"></p>
             </div>
-            <button class="font-semibold text-base text-gray-50 p-2 bg-red-600 rounded-md transition-all duration-300 ease-in-out hover:bg-red-500 cursor-pointer" type="button" onclick="verify()" >Login</button>
+            <button class="font-semibold text-base text-gray-50 p-2 bg-red-600 rounded-md transition-all duration-300 ease-in-out hover:bg-red-500 active:bg-red-300 cursor-pointer" type="button" onclick="verify()" >Login</button>
             <div class="flex flex-row justify-between">   
                 <a class="text-blue-500 text-sm border-b border-blue-500 lg:border-0 lg:hover:border-b lg:hover:border-blue-500" href="SignUp.html">Create New Account</a>
                 <a class="text-red-500 text-sm border-b border-red-500 lg:border-0 lg:hover:border-b lg:hover:border-red-500" href="#">Forgot Password</a>
             </div>
-            <p id="verifyaccount" class="m-auto"></p>
+            <p id="verifylogin" class="m-auto"></p>
         </div>
     </div>
 </div>
 </body>
-<script>
-    function verify() {
-    const confirm = document.getElementById("message")
-    const passmsg = document.getElementById("passmsg")
-    const verifyaccount = document.getElementById("verifyaccount")
-    const verifyEmail = document.getElementById("email").value.trim();
-    const checkPassword = document.getElementById("password").value;
-
-
-    confirm.style.color = "red";
-    confirm.style.fontSize = "13px";
-    passmsg.style.color = "red";
-    passmsg.style.fontSize = "13px";
-
-
-    // CHECK EMAIL
-    const gmailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-    if (!gmailPattern.test(verifyEmail)) {
-        confirm.innerHTML = "Please use a valid Gmail address";
-        return;
-    }
-
-    // CHECK PASSWORD
-    if (checkPassword.length < 6) {
-        passmsg.innerHTML = "Password should be exactly 6 characters";
-        return;
-    }
-
-    // VERIFY ACCOUNT
-    verifyaccount.innerHTML = "Welcome Back!";
-    verifyaccount.style.color = "green";
-
-    setTimeout(() => {
-        window.location.href = "Store.html";
-    }, 1000);
-    }
-</script>
+<script src="./script.js"></script>
 </html>
