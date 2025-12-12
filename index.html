@@ -5,66 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shop</title>
-    <style>
-  @layer utilities {
-    .underline-anim {
-      width: 0%;
-      height: 3px;
-      background: #080808; /* blue-500 */
-      transition: width 0.4s ease-in-out;
-    }
-
-    .group:hover .underline-anim {
-      width: 100%;
-    }
-  }
-
-    .scrollbar-hide{
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;
-}
-
-  @keyframes slideRight {
-    0% { transform: translateX(100%); opacity: 1; }
-    100% { transform: translateX(0); opacity: 1; }
-  }
-
-  .animate-slideRight {
-    animation: slideRight 0.4s ease-out forwards;
-  }
-
-#arrival{
-    display: grid;
-    background-color: green;
-    gap: 8;
-    grid-template-columns: repeat(2, 1fr) 250px 250px;
-    grid-template-rows:  250px 250px;
-    grid-template-areas: 
-    "ps5 ps5 woman woman"
-    "ps5 ps5 jbl perfume";
-}
-
-#play{
-    grid-area: ps5;
-    margin-top: 10px;
-}
-
-#lady{
-    grid-area: woman;
-}
-
-#speaker{
-    grid-area: jbl;
-}
-
-#perf{
-    grid-area: perfume;
-}
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <!--CDN TAILWIND-->
 <script src="https://cdn.tailwindcss.com"></script>
@@ -97,7 +38,7 @@
     </li>
 
     <li class="text-sm font-semibold sm:text-base lg:text-xl lg:hover:border-b lg:hover:border-gray-900">
-        <a href="Store.html" class="block w-full">Store</a>
+        <a href="Phones & Gadgets.html" class="block w-full">Store</a>
     </li>
 
     <li class="text-sm font-semibold sm:text-base lg:text-xl lg:hover:border-b lg:hover:border-gray-900">
@@ -109,7 +50,7 @@
     </li>
 
     <li class="text-sm md:hidden font-semibold sm:text-base lg:text-xl lg:hover:border-b lg:hover:border-gray-900">
-        <a href="#" class="block w-full">Men's Fashion</a>
+        <a href="Men's Fashion.html" class="block w-full">Men's Fashion</a>
     </li>
 
     <li class="text-sm md:hidden font-semibold sm:text-base lg:text-xl lg:hover:border-b lg:hover:border-gray-900">
@@ -117,7 +58,7 @@
     </li>
 
     <li class="text-sm md:hidden font-semibold sm:text-base lg:text-xl lg:hover:border-b lg:hover:border-gray-900">
-        <a href="Store.html" class="block w-full">Phones & Gadgets</a>
+        <a href="Phones & Gadgets.html" class="block w-full">Phones & Gadgets</a>
     </li>
 
     <li class="text-sm md:hidden font-semibold sm:text-base lg:text-xl lg:hover:border-b lg:hover:border-gray-900">
@@ -236,14 +177,14 @@
 
 <!--- PRODUCTS AND ADS-->
 <div class=" px-2 flex md:flex pb-8 md:flex-row md:-m-2 lg:-m-0 md:justify-between md:pr-4 lg:pr-10 h-fit bg-white">
-        <ul class="hidden md:flex md:flex-col bg-white md:block md:gap-0 md:text-lg lg:text-xl md:w-[200px] lg:w-1/4 border-r border-gray-300 md:pl-4 lg:pl-8 whitespace-nowrap md:pt-4 lg:pt-4">
+        <ul class="hidden md:flex md:flex-col bg-white md:block md:gap-0 md:text-lg overflow-y-hidden hover:overflow-y-auto  lg:text-xl md:w-[200px] lg:w-1/4 border-r border-gray-300 md:pl-4 lg:pl-8 whitespace-nowrap md:pt-4 lg:pt-4">
           <div class="group flex items-center space-x-4 cursor-pointer">
             <li class="md:text-lg lg:text-xl font-semibold transition-transform duration-300 hover:scale-105"><a href="#" class="block py-2">Women's Fashion</a></li>
             <i class="bi bi-arrow-right hidden lg:flex text-xl opacity-0 translate-x-0 group-hover:opacity-100 group-hover:translate-x-4 transition-all duration-500 ease-out"></i>
           </div>
 
           <div class="group flex items-center space-x-4 cursor-pointer">
-            <li class="md:text-lg lg:text-xl font-semibold transition-transform duration-300 hover:scale-105"><a href="#" class="block py-2">Men's Fashion</a></li>
+            <li class="md:text-lg lg:text-xl font-semibold transition-transform duration-300 hover:scale-105"><a href="Men's Fashion.html" class="block py-2">Men's Fashion</a></li>
             <i class="bi bi-arrow-right hidden lg:flex text-xl opacity-0 translate-x-0 group-hover:opacity-100 group-hover:translate-x-4 transition-all duration-500 ease-out"></i>
           </div>
 
@@ -290,7 +231,7 @@
         </ul>
 
     <!--AD IMAGE-->
-    <div class="relative w-full pt-2 md:w-2/3 float-right sm:h-[290px] md:h-[300px] lg:h-[400px] flex bg-white md:justify-between md:pt-4 lg:pt-8">
+    <div class="relative w-full pt-2 md:w-2/3 float-right h-[250px] md:h-[300px] lg:h-[400px] flex bg-white md:justify-between md:pt-4 lg:pt-8">
       <div class="flex w-full aspect-video cursor-pointer overflow-x-scroll scroll-smooth snap-x snap-mandatory rounded-md h-full scrollbar-hide">
         <img id="slide-1" src="/flash sale.jpg" alt="flash sale" class="transition-transform duration-300 hover:scale-105 grow shrink-0 basis-full snap-start w-full object-fill">
         <img id="slide-2" src="/8k res tv.jpg" alt="flash sale" class="transition-transform duration-300 hover:scale-105 w-full grow shrink-0 basis-full snap-start">
@@ -348,123 +289,215 @@
   <div class="bg-white flex flex-row gap-2 p-4 rounded-md overflow-x-scroll scroll-smooth snap-x snap-mandatory scrollbar-hide">
     
     <!-- PRODUCT CARD -->
-    <div class="flex-none flex flex-col gap-2 w-[13rem] snap-start rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300">
-  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-40%</p>
-  <img class="object-cover w-full" src="/A17-removebg-preview.png" alt="products">
-  <p class="text-base md:text-lg font-semibold">Samsung A17</p>
-  <p class="text-base md:text-xl font-bold">₦250.00</p>
+     <a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/A17-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Samsung A17 (128gb + 4gb RAM)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 250,000.00</p>
+  </div>
 </div>
+</a>
 
-<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
-  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-50%</p>
-  <img class="object-cover w-full" src="/OnePlus-13-1.webp" alt="products">
-  <p class="text-base md:text-lg font-semibold">Oneplus 13 512gb</p>
-  <p class="text-base md:text-xl font-bold">₦550.00</p>
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-5%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/OnePlus-13-1.webp" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Oneplus 13 512gb + 8gb RAM</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 550,000.00</p>
+  </div>
 </div>
+</a>
 
 
-<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
-  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-40%</p>
-  <img class="object-cover w-full" src="/redmi-note-13.webp" alt="products">
-  <p class="text-base md:text-lg font-semibold">Redmi Note 13 256gb</p>
-  <p class="text-base md:text-xl font-bold">₦263.00</p>
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/redmi-note-13.webp" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Redmi Note 13 256gb 6gb RAM (Black color)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 263,000.00</p>
+  </div>
 </div>
+</a>
 
-
-<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
-  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
-  <img class="object-cover w-full" src="/samsung_s26u-removebg-preview.png" alt="products">
-  <p class="text-base md:text-lg font-semibold">Samsung Galaxy S26 Ultra</p>
-  <p class="text-base md:text-xl font-bold">₦2,600,150.00</p>
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="samsung_s26u-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Samsung Galaxy S26 Ultra (1TB + 16GB RAM) Black Titanium</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 2,600,150.00</p>
+  </div>
 </div>
+</a>
 
 
-<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
-  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-35%</p>
-  <img class="object-cover w-full" src="/s23U.jpg" alt="products">
-  <p class="text-base md:text-lg font-semibold">Samsung Galaxy S23 Ultra 1TB</p>
-  <p class="text-base md:text-xl font-bold">₦1,450,200.00</p>
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-20%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/s23U.jpg" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Samsung Galaxy S23 Ultra 1TB 12gb RAM (Stylus pen)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 1,450,200.00</p>
+  </div>
 </div>
+</a>
 
 
-<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
-  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-40%</p>
-  <img class="object-cover w-full" src="/oraimo-removebg-preview.png" alt="products">
-  <p class="text-base md:text-lg font-semibold">Oraimo Earbuds</p>
-  <p class="text-base md:text-xl font-bold">₦8000.99</p>
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-35%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/oraimo-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Oraimo Earbuds (TWS Loud speakers)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 8000.99</p>
+  </div>
 </div>
+</a>
 
 
-<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
-  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
-  <img class="object-cover w-full" src="/infinix_hot_60_pro_plus-removebg-preview.png" alt="products">
-  <p class="text-base md:text-lg font-semibold">Infinix hHot 60 PRO plus</p>
-  <p class="text-base md:text-xl font-bold">$190.00</p>
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/infinix_hot_60_pro_plus-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Infinix hHot 60 PRO plus (256gb + 6gb RAM)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 265,500.00</p>
+  </div>
 </div>
+</a>
 
 
-<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
-  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
-  <img class="object-cover w-full" src="/itel_power_bank_20000mah-removebg-preview.png" alt="products">
-  <p class="text-base md:text-lg font-semibold">Itel Power Bank 20000mah</p>
-  <p class="text-base md:text-xl font-bold">$15.00</p>
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/itel_power_bank_20000mah-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Itel Power Bank 20000mah (Dual output)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 20,500.00</p>
+  </div>
 </div>
+</a>
 
 
-<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
-  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-45%</p>
-  <img class="object-cover w-full" src="/samsung_tv_oled-removebg-preview.png" alt="products">
-  <p class="text-base md:text-lg font-semibold">Samsung QLED Smart TV</p>
-  <p class="text-base md:text-xl font-bold">$850.00</p>
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/samsung_tv_oled-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Samsung 55-Inch Class Crystal UHD 55U8000F 4K Smart TV (2025 Model)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 988,050.00</p>
+  </div>
 </div>
+</a>
 
 
-<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
-  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-30%</p>
-  <img class="object-cover w-full" src="/apple_watch_series_10-removebg-preview.png" alt="products">
-  <p class="text-base md:text-lg font-semibold">Apple Watch Series 10</p>
-  <p class="text-base md:text-xl font-bold">$350.00</p>
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-35%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/apple_watch_series_10-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Apple Watch Series 10 (Water resistance)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦304,600.00</p>
+  </div>
 </div>
+</a>
 
 
-<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
-  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
-  <img class="object-cover w-full" src="/iphone_17_pro_max_cosmic_orange-removebg-preview.png" alt="products">
-  <p class="text-base md:text-lg font-semibold">Iphone 17 PRO MAX Cosmic orange</p>
-  <p class="text-base md:text-xl font-bold">$1350.00</p>
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-25%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/iphone_17_pro_max_cosmic_orange-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Iphone 17 PRO MAX Cosmic orange</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 2,450,200.00</p>
+  </div>
 </div>
+</a>
 
 
-<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
-  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-30%</p>
-  <img class="object-cover w-full" src="/tecno_spark_40_pro_plus-removebg-preview.png" alt="products">
-  <p class="text-base md:text-lg font-semibold">Tecno spark 40 PRO+</p>
-  <p class="text-base md:text-xl font-bold">$180.00</p>
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/tecno_spark_40_pro_plus-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Tecno spark 40 PRO+</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 309,400.000</p>
+  </div>
 </div>
+</a>
 
 
-<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
-  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
-  <img class="object-cover w-full" src="/unisex up and down.jpg" alt="products">
-  <p class="text-base md:text-lg font-semibold">Unisex up and down wears</p>
-  <p class="text-base md:text-xl font-bold">$50.00</p>
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-5%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/unisex up and down.jpg" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Unisex up and down wears</p></p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 45,000.00</p>
+  </div>
 </div>
+</a>
 
 
-<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
-  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
-  <img class="object-cover w-full" src="/tracksuits.webp" alt="products">
-  <p class="text-base md:text-lg font-semibold">Tracksuits</p>
-  <p class="text-base md:text-xl font-bold">$30.00</p>
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/tracksuits.webp" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Tracksuits</p>
+  <p class="text-base text-lg font-bold text-orange-500">₦ 12,000.00</p>
+  </div>
 </div>
+</a>
 
 
-<div class="flex-none flex flex-col gap-2 w-[13rem] rounded-lg p-4 bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
-  <p class="bg-red-500 text-gray-50 w-fit rounded-md p-2">-20%</p>
-  <img class="object-cover w-full" src="/tecno_camon_40_pro-removebg-preview.png" alt="products">
-  <p class="text-base md:text-lg font-semibold">Tecno Camon 40 PRO 256gb</p>
-  <p class="text-base md:text-xl font-bold">$240.00</p>
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-17%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/tecno_camon_40_pro-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Tecno Camon 40 PRO 256gb</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦372,500.00</p>
+  </div>
 </div>
+</a>
 
 
   </div>
@@ -490,6 +523,225 @@
         <a href="#"><img class=" w-[27.7vw] h-fit sm:w-[29vw] md:w-[14vw] rounded-md transition-transform duration-300 hover:scale-105" src="/Garden-outdoor.png" alt="Accessories"></a>
     </div>
     </div>
+
+<div class="p-2 md:px-4 lg:px-10 pt-4 flex flex-col gap-4 pb-4">
+  <div class="bg-white flex flex-row gap-2 p-4 rounded-md overflow-x-scroll scroll-smooth snap-x snap-mandatory scrollbar-hide">
+    
+    <!-- PRODUCT CARD -->
+     <a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/A17-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Samsung A17 (128gb + 4gb RAM)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 250,000.00</p>
+  </div>
+</div>
+</a>
+
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-5%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/OnePlus-13-1.webp" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Oneplus 13 512gb + 8gb RAM</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 550,000.00</p>
+  </div>
+</div>
+</a>
+
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/redmi-note-13.webp" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Redmi Note 13 256gb 6gb RAM (Black color)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 263,000.00</p>
+  </div>
+</div>
+</a>
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="samsung_s26u-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Samsung Galaxy S26 Ultra (1TB + 16GB RAM) Black Titanium</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 2,600,150.00</p>
+  </div>
+</div>
+</a>
+
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-20%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/s23U.jpg" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Samsung Galaxy S23 Ultra 1TB 12gb RAM (Stylus pen)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 1,450,200.00</p>
+  </div>
+</div>
+</a>
+
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-35%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/oraimo-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Oraimo Earbuds (TWS Loud speakers)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 8000.99</p>
+  </div>
+</div>
+</a>
+
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/infinix_hot_60_pro_plus-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Infinix hHot 60 PRO plus (256gb + 6gb RAM)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 265,500.00</p>
+  </div>
+</div>
+</a>
+
+
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/itel_power_bank_20000mah-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Itel Power Bank 20000mah (Dual output)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 20,500.00</p>
+  </div>
+</div>
+</a>
+
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-10%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/samsung_tv_oled-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Samsung 55-Inch Class Crystal UHD 55U8000F 4K Smart TV (2025 Model)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 988,050.00</p>
+  </div>
+</div>
+</a>
+
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-35%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/apple_watch_series_10-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Apple Watch Series 10 (Water resistance)</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦304,600.00</p>
+  </div>
+</div>
+</a>
+
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-25%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/iphone_17_pro_max_cosmic_orange-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Iphone 17 PRO MAX Cosmic orange</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 2,450,200.00</p>
+  </div>
+</div>
+</a>
+
+
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/tecno_spark_40_pro_plus-removebg-preview.png" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Tecno spark 40 PRO+</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 309,400.000</p>
+  </div>
+</div>
+</a>
+
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-5%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/unisex up and down.jpg" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Unisex up and down wears</p></p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 45,000.00</p>
+  </div>
+</div>
+</a>
+
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-15%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/Dell latitude.avif" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Cosmetics Beauty Kit</p>
+  <p class="text-base text-lg font-bold text-orange-500">₦ 112,000.00</p>
+  </div>
+</div>
+</a>
+
+
+<a href="#">
+<div class="relative flex-none flex flex-col w-[15rem] h-[21.3rem] rounded-lg bg-transparent hover:rounded-md hover:shadow-2xl transition-shadow duration-300 snap-start">
+  <p class="absolute top-0 left-0 z-20 bg-red-500 text-gray-50 w-fit rounded-md p-2">-17%</p>
+  <div class="relative top-0 w-full h-[15rem]">
+  <img class="object-contain absolute top-14 left-0 right-0 w-full h-[8rem]" src="/blender.webp" alt="products">
+  </div>
+  <div class="absolute bottom-2 p-2">
+  <p class="text-base line-clamp-2">Blender</p>
+  <p class="text-base md:text-lg text-orange-500 font-bold">₦ 72,500.00</p>
+  </div>
+</div>
+</a>
+
+
+  </div>
+  <a href="#" class="bg-red-500 hover:bg-red-400 text-gray-50 text-base rounded-md md:text-xl font-semibold m-auto p-2 md:py-2 md:px-8">View All Products</a>
+</div>
 
 <!-- PRODUCTS 2 -->
   <div class="p-2 md:px-4 lg:px-10 flex flex-col gap-4 pb-4">

@@ -79,15 +79,7 @@ setTimeout(() => {
         window.location.href = "Store.html";
     }, 1000);
 
-
-    verifyaccount.innerHTML = "Login Successful!";
-    verifyaccount.style.color = "green";
-
     setTimeout(() => {
         window.location.href = "Store.html";
     }, 1000);
     }
-
-
-
-

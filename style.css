@@ -1,0 +1,63 @@
+.slider-orange {
+  accent-color: orange;
+  background-color: white;
+}
+
+@layer utilities {
+    .underline-anim {
+      width: 0%;
+      height: 3px;
+      background: #080808; /* blue-500 */
+      transition: width 0.4s ease-in-out;
+    }
+
+    .group:hover .underline-anim {
+      width: 100%;
+    }
+  }
+
+    .scrollbar-hide{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+  @keyframes slideRight {
+    0% { transform: translateX(100%); opacity: 1; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+
+  .animate-slideRight {
+    animation: slideRight 0.4s ease-out forwards;
+  }
+
+#arrival{
+    display: grid;
+    background-color: green;
+    gap: 8;
+    grid-template-columns: repeat(2, 1fr) 250px 250px;
+    grid-template-rows:  250px 250px;
+    grid-template-areas: 
+    "ps5 ps5 woman woman"
+    "ps5 ps5 jbl perfume";
+}
+
+#play{
+    grid-area: ps5;
+    margin-top: 10px;
+}
+
+#lady{
+    grid-area: woman;
+}
+
+#speaker{
+    grid-area: jbl;
+}
+
+#perf{
+    grid-area: perfume;
+}

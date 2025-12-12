@@ -1,1 +1,1832 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+</head>
+<!--TAILWIND CDN-->
+<script src="https://cdn.tailwindcss.com"></script>
+<!--CDN ICON LINK-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<!--CSS LINK-->
+<link rel="stylesheet" href="style.css">
+
+<body class="bg-gray-200 w-full overflow-x-hidden">
+
+    <!--FIRST HEADER-->
+    <div class="bg-black flex justify-around  text-white h-[35px]  w-full top-0  px-2 py-2 lg:h-[40px]">
+        <p class="hidden sm:text-sm sm:block lg:text-sm xl:text-lg">Summer Sale For All Swim Suits And Free Express
+            Delivery-OFF
+            50%! <a href="#" class="border-white border-b-[0.95px] w-auto">ShopNow</a></p>
+        <p class="text-xs sm:hidden md:hidden lg:hidden 2xl:hidden">Summer Sale! Free Express Delivery -
+            50% Off</p>
+        <p class="text-sm xl:text-lg">English ˅</p>
+    </div>
+
+    <!--SECOND HEADER-->
+    <div
+        class="sticky top-0 z-50 py-2 px-3 bg-white flex justify-between items-center gap-5 border-b-[1px] border-black w-full h-fit  md:py-2 lg:px-7 lg:py-3">
+
+        <!--LOGO-->
+        <h1 class="text-md  items-center sm:text-lg font-bold  sm:flex sm:justify-between sm:gap-5 lg:text-xl">
+            <a href="index.html">Exclusive</a>
+        </h1>
+
+        <!--INPUT SEARCH-->
+        <div class="flex justify-between gap-8">
+            <label class="relative" for="search">
+                <input
+                    class="hidden md:bg-gray-300 md:focus:outline-none  md:flex md:px-4 md:py-1  md:rounded-xl md:w-[45vw]"
+                    type="search" id="form" placeholder="what are you looking for?">
+                <input
+                    class="hidden sm:flex sm:bg-gray-300 sm:focus:outline-none sm:px-3 sm:rounded-lg sm:text-sm sm:w-[35vw] sm:py-1 md:hidden"
+                    type="search" id="form" placeholder="Looking for something">
+
+                <!-- Icon -->
+                <a href="#"><span
+                        class="hidden sm:flex sm:absolute sm:right-3  sm:top-1/2 sm:-translate-y-1/2 text-black cursor-pointer">
+                        <i class="bi bi-search"></i>
+                    </span></a>
+            </label>
+
+            <!--CART AND FAVOURITE ICON-->
+            <div class="hidden cursor-pointer sm:flex sm:gap-8 md:text-2xl">
+                <i class="bi bi-heart"></i>
+                <i class="bi bi-cart3"></i>
+            </div>
+
+
+            <!--MENU BUTTON-->
+            <div class="flex justify-between text-2xl cursor-pointer font-bold text-blacktext-white  px-2 rounded-lg">
+                <i id="menuBtn" class="bi bi-list-task"></i>
+
+
+
+
+                <!--MENU TEXT-->
+                <ul id="menu"
+                    class="hidden absolute  top-[3.1rem] text-black overflow-y-scroll max-h-screen shadow-md z-50 animate-slideRight w-[65%] flex-col right-0 space-y-8 bg-gray-50 p-8  h-fit md:text-sm lg:space-y-4  lg:top-[3.55rem] md:w-[20%] md:right-8 lg:rounded-tr-4xl">
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="/index.html" class="block w-full">Home</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="/about.html" class="block w-full">About</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="" class="block w-full">Store</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="/SignUp.html" class="block w-full">SignUp</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Women's Fashion</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="./Men's Fashion.html" class="block w-full">Men's Fashion</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Electronics</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="./index.html" class="block w-full">Phones & Gadgets</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Medicine</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Sports & Outdoors</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Baby's & Toys</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Groceries & Pets</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Health & Beauty</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Home & Lifestyles</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Health & Beauty</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Home & Lifestyles</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Health & Beauty</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Home & Lifestyles</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Health & Beauty</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Home & Lifestyles</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Health & Beauty</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Home & Lifestyles</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Health & Beauty</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Home & Lifestyles</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Health & Beauty</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Home & Lifestyles</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Health & Beauty</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Home & Lifestyles</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Health & Beauty</a>
+                    </li>
+
+                    <li
+                        class="text-sm font-semibold sm:text-base  lg:text-md lg:hover:border lg:hover:border-black lg:hover:w-full lg:hover:rounded-lg lg:hover:px-2">
+                        <a href="#" class="block w-full">Home & Lifestyles</a>
+                    </li>
+
+                </ul>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--PHONE & TABLETS LINK-->
+    <h6 class="px-4 py-2 text-sm md:text-md 2xl:text-xl"><a href="./index.html">Home<span class="text-xl font-bold">
+                ›</span></a><a class="px-3 text-gray-500" href="#">Fashion</a></h6>
+
+
+    <!--PHONE & TABLETS TEXT-->
+    <h3
+        class="bg-white text-center font-bold mt-6 mb-4 py-3 text-sm md:py-3 md:mb-15 md:mt-15 md:text-lg lg:m-5 lg:rounded-lg xl:text-2xl">
+        Fashion</h3>
+
+
+    <!--ORDER NO-->
+    <h3
+        class="bg-black mb-6 text-center py-2 m-2 rounded-lg text-white text-xs sm:text-sm md:m-5 md:text-lg xl:text-2xl">
+        CALL TO
+        ORDER :
+        <span class="font-bold text-orange-500 text-xs sm:text-sm xl:text-2xl">+234 704 971 3444 <span
+                class="text-white font-semibold xl:text-xl">or</span> +234
+            916 184 5818</span>
+    </h3>
+
+
+    <!--FASHION-->
+    <div class="h-fit  bg-white w-full md:w-[97%] md:m-5">
+
+        <!--FASHION FIRST HEADER-->
+        <div
+            class="bg-black text-white flex justify-between px-4 items-center h-[38px] w-full md:rounded-t-sm  md:h-[50px]">
+            <h2 class="hidden font-semibold text-sm md:flex md:textlg xl:text-xl">Fashion picks</h2>
+
+            <!--MOBILE VIEW TEXT-->
+            <div class="flex flex-col md:hidden">
+                <h3 class="text-sm">Fashion Top picks</h3>
+                <h3 class="text-xs">Exclusive Platinum Partner</h3>
+            </div>
+            <a class="font-semibold text-sm md:text-md xl:text-lg" href="">See All <span
+                    class="text-lg xl:text-xl">»</span></a>
+        </div>
+
+        <!--SAMSUNG PHONE HEADER-->
+        <div class="relative w-full h-fit cursor-pointer">
+            <div class="slider h-fit m-1 flex scrollbar-hide overflow-x-auto  snap-x snap-mandatory space-x-2 p-2">
+
+                <!--PICTURES OF SAMSUNG PHONES-->
+
+                <div
+                    class="bg-white h-fit w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg" src="./men Berkery.jpg" alt="Mobile"></a>
+                    <p class="m-2 text-sm truncate">Berrykey Mens Sport Outdoor Cotton Long Sleeve Hoodies Sportwear Warm Sweatshirts</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 12,000</p>
+                </div>
+
+                <div
+                    class="bg-white h-fit w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg" src="./Danami longsleeves.jpg" alt="Mobile"></a>
+                    <p class="m-2 text-sm truncate">Danami 4 In One Button T Shirts- Yellow Blue Black/grey Wine/grey</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 25,500</p>
+
+                </div>
+
+
+                <div
+                    class="bg-white h-fit w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg" src="./men Duo color blue jacket.jpg" alt="Mobile"></a>
+                    <p class="m-2 text-sm truncate">Dou-color Men's Long Sleeve Plaid Shirt - Black</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 8,300</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-fit w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg" src="./men silk socks.jpg" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md truncate">ASHION 5 Pairs Men’s Cotton Socks Breathable Anti-Odor Striped</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 6,310</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-fit w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg" src="./mens Jacket.jpg" alt="Mobile"></a>
+                    <p class="m-2 text-sm truncate">Dou-color Men's Long Sleeve Plaid Shirt - Black</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 14,000</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-fit w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg" src="./Men regular stretch jeans.jpg" alt="Mobile"></a>
+                    <p class="m-2 text-sm truncate">Men's 2 In 1 Stretch Regular Fit Jeans</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 20,250</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-fit w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg" src="./Men hoodie.jpg" alt="Mobile"> </a>
+                    <p class="m-2 text-sm truncate">ALagzi 2024 Men's Fashion Casual Sports Long Sleeve Suit - White</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 19,850</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-fit w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg" src="./Men cotton short sleeve and shorts.jpg" alt="Mobile"> </a>
+                    <p class="m-2 text-sm truncate">JNKACLD Men's T-Shirt + Shorts - White</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 9,000</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-fit w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg" src="./Men bekery shirt.jpg" alt="Mobile"> </a>
+                    <p class="m-2 text-sm truncate">Berrykey Mens Casual Business T-shirt Polos Shirts Stand Collar- Gray</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 5,200</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-fit w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg" src="./Men dou white fashion short sleeve and shorts.jpg" alt="Mobile"></a>
+                    <p class="m-2 text-sm truncate">Dou-color Men's Fashion 1997 Short Sleeved T-shirt And Shorts 2-in-1 Set - Black</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 14,500</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-fit w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg" src="./Men boxers.jpg" alt="Mobile"> </a>
+                    <p class="m-2 text-sm truncate">Cloudoon FLASH SALE Underwear Comfortable Cotton Boxers Briefs Men's Fashion</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 7,500</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-fit w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg" src="./Men shirt.jpg" alt="Mobile"></a>
+                    <p class="m-2 text-sm truncate">GALUIN Short Sleeve T-shirt + Shorts - White</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 6,500</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-fit w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg" src="./Premium men singlwts.jpg" alt="Mobile"></a>
+                    <p class="m-2 text-sm truncate">Fancy 6-in-1 Premium Sleeveless Men's Singlet (Underwear)</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 11,450</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-fit w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg" src="./Alagozi casual men shoe.jpg" alt="Mobile"></a>
+                    <p class="m-2 text-sm truncate">ALagzi 2025 Mens Casual Sci-Fi Warrior Shoes Running Sneakers - Black/Green</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 24,000</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-fit w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg" src="./Mens up and down.jpg" alt="Mobile"></a>
+                    <p class="m-2 text-sm truncate">Men's 2 In 1 Short Sleeve T-Shirt & Shorts Set- Black</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 15,000</p>
+                </div>
+            </div>
+
+            <!--BACK-->
+            <button
+                class="backBtn hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 transition-transform duration-300 hover:-translate-x-2 hover:bg-gray-100 hover:text-black bg-gray-500/70 text-white px-4 py-2 rounded-full text-md">
+                &lt;
+            </button>
+            <!--NEXT-->
+            <button
+                class="nextBtn hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 transition-transform duration-300 hover:translate-x-2 bg-gray-500/70 hover:bg-gray-100 hover:text-black text-white px-4 py-2 rounded-full text-md">
+                &gt;
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col bg-white">
+        <p class="text-2xl font-bold m-auto bg-black w-full">Category</p>
+    <div class="grid grid-cols-3 bg-blue-600 grid-row-2 mx-2 md:mx-5 py-4 gap-2 px-4 bg-white md:grid-cols-6 md:grid-row-1">
+        <div class="bg-white h-fit md:h-fit flex flex-col justify-center shadow-md hover:shadow-gray-500 items-center border-black cursor-pointer">
+            <img class="h-[70px] lg:h-[114px]" src="./cate shirts.jpg">
+            <p class="text-xs md:text-sm lg:text-md">Underwear</p>
+        </div>
+        <div class="bg-white h-fit md:h-fit flex flex-col justify-center shadow-md hover:shadow-gray-500 items-center border-black cursor-pointer">
+            <img class="h-[70px] lg:h-[114px]" src="./cate undewear.jpg">
+            <p class="text-xs md:text-sm lg:text-md">Underwear</p>
+        </div>
+        <div class="bg-white h-fit md:h-fit flex flex-col justify-center shadow-md hover:shadow-gray-500 items-center border-black cursor-pointer">
+            <img class="h-[70px] lg:h-[114px]" src="./cate jeans.jpg">
+            <p class="text-xs md:text-sm lg:text-md">Jeans</p>
+        </div>
+        <div class="bg-white h-fit md:h-fit flex flex-col justify-center shadow-md hover:shadow-gray-500 items-center border-black cursor-pointer">
+            <img class="h-[70px] lg:h-[114px]" src="./cate sportwear.jpg">   
+            <p class="text-xs md:text-sm lg:text-md">Sportwears</p>
+        </div>
+        <div class="bg-white h-fit md:h-fit flex flex-col justify-center shadow-md hover:shadow-gray-500 items-center border-black cursor-pointer">
+            <img class="h-[70px] lg:h-[114px]" src="./catee pants.jpg">
+            <p class="text-xs md:text-sm lg:text-md">Pants</p>
+        </div>
+        <div class="bg-white h-fit md:h-fit flex flex-col justify-center shadow-md hover:shadow-gray-500 items-center cursor-pointer">
+            <img class="h-[70px] lg:h-[114px]" src="./cate hoodie.jpg">   
+            <p class="text-xs md:text-sm lg:text-md">Watches</p>
+    </div>
+
+    </div>
+
+    </div>
+
+    <!--TOP PHONES PAGES-->
+    <div class="h-fit  bg-white w-full md:w-[97%] md:m-5">
+
+        <!--TOP FIRST HEADER-->
+        <div
+            class="bg-black text-white flex justify-between px-4 items-center h-[30px] w-full md:rounded-t-sm  md:h-[50px]">
+            <h2 class="font-semibold text-sm md:textlg xl:text-xl">Trending Shirts</h2>
+        </div>
+
+        <!--TOP HEADER-->
+        <div class="relative w-full h-fit cursor-pointer">
+            <div class="slider h-fit m-1 flex overflow-x-auto scrollbar-hide  snap-x snap-mandatory space-x-2 p-2">
+
+                <!--TOP IMAGE PHONES-->
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./trend shirt 8.jpeg" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">Samsung Galaxy A06 6.7" / ...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 125,500</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./Tren shirt 1.webp" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">Infinix Smart 10 Plus 6.7" / ...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 125,500</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./Trend shirt 11.jpeg" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">Infinix Hot 50 Pro + 6.78" / ...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 242,318</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./Trend shirt 12.jpeg" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">itel City 100 7.65mm" Slim ...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 100,500</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./Trend shirt 13.jpeg" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">redbeat REDBEAT C1 Tabl...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 95,900</p>
+                </div>
+
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./Trend shirt 14.jpeg" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">Samsung Galaxy A07 6.7" ...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 139,310</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./Trend shirt 4.jpeg" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">XIAOMI Redmi Note 14 Pro / ...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 568,605</p>
+                </div>
+
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./Trend shirt 5.jpeg" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">TiLECC Android 12 7 inch...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 54,200</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./Trend shirt 6.jpeg" alt="Speaker"></a>
+                    <p class="m-2 text-sm md:text-md">Zealot S51 Wireless BT sp...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 20,200</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./Trend shirt 7.jpeg" alt="Power Bank"></a>
+                    <p class="m-2 text-sm md:text-md">Kingnote 20000mAh Pow..</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 7,100</p>
+                </div>
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./Trend shirt 9.avif" alt="Power Bank"></a>
+                    <p class="m-2 text-sm md:text-md">AGM PAD T1 Android 14...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 141,800</p>
+                </div>
+            </div>
+            <!--BACK-->
+            <button
+                class="backBtn hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 transition-transform duration-300 hover:-translate-x-2 hover:bg-gray-100 hover:text-black bg-gray-500/70 text-white px-4 py-2 rounded-full text-md">
+                &lt;
+            </button>
+            <!--NEXT-->
+            <button
+                class="nextBtn hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 transition-transform duration-300 hover:translate-x-2 bg-gray-500/70 hover:bg-gray-100 hover:text-black text-white px-4 py-2 rounded-full text-md">
+                &gt;
+            </button>
+        </div>
+    </div>
+
+
+    <!--TOP JEANS PAGES-->
+<div class="h-fit bg-white w-full md:w-[97%] md:m-5">
+
+    <!--TOP FIRST HEADER-->
+    <div class="bg-black text-white flex justify-between px-4 items-center h-[30px] w-full md:rounded-t-sm md:h-[50px]">
+        <h2 class="font-semibold text-sm md:text-lg xl:text-xl">Jeans</h2>
+    </div>
+
+    <!--TOP HEADER-->
+    <div class="relative w-full h-fit cursor-pointer">
+        <div class="slider h-fit m-1 flex overflow-x-auto scrollbar-hide snap-x snap-mandatory space-x-2 p-2">
+
+            <!--TOP IMAGE JEANS-->
+            <div class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwae.webp" alt="boxers"></a>
+                <p class="m-2 text-sm md:text-md truncate">Premium Classic Men’s Cotton Boxers – 3 in 1 Pack</p>
+                <p class="m-2 text-sm font-semibold text-orange-500">₦ 125,500</p>
+            </div>
+
+            <div class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 1.jpeg" alt="boxers"></a>
+                <p class="m-2 text-sm md:text-md truncate">Soft Breathable Men’s Boxer Shorts – 4 Pieces Set</p>
+                <p class="m-2 text-sm font-semibold text-orange-500">₦ 125,500</p>
+            </div>
+
+            <div class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 11.jpeg" alt="boxers"></a>
+                <p class="m-2 text-sm md:text-md truncate">Luxury Elastic Waist Men’s Underwear – 5 in 1 Pack</p>
+                <p class="m-2 text-sm font-semibold text-orange-500">₦ 242,318</p>
+            </div>
+
+            <div class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 12.jpeg" alt="boxers"></a>
+                <p class="m-2 text-sm md:text-md truncate">Men’s Patterned Boxer Briefs – 3 Pieces Collection</p>
+                <p class="m-2 text-sm font-semibold text-orange-500">₦ 100,500</p>
+            </div>
+
+            <div class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 14.jpeg" alt="boxers"></a>
+                <p class="m-2 text-sm md:text-md truncate">High-Quality Men’s Stretch Boxers – 6 in 1 Value Pack</p>
+                <p class="m-2 text-sm font-semibold text-orange-500">₦ 95,900</p>
+            </div>
+
+            <div class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 2.jpeg" alt="boxers"></a>
+                <p class="m-2 text-sm md:text-md truncate">ComfortFlex Supreme Men’s Underwear – 3 in 1 Set</p>
+                <p class="m-2 text-sm font-semibold text-orange-500">₦ 139,310</p>
+            </div>
+
+            <div class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 3.jpeg" alt="boxers"></a>
+                <p class="m-2 text-sm md:text-md truncate">Ultra-Soft Men’s Checked Boxers – 2 Pieces</p>
+                <p class="m-2 text-sm font-semibold text-orange-500">₦ 568,605</p>
+            </div>
+
+            <div class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 4.jpeg" alt="boxers"></a>
+                <p class="m-2 text-sm md:text-md truncate">Classic Fit Men’s Boxers – 5 Pieces Mixed Colors</p>
+                <p class="m-2 text-sm font-semibold text-orange-500">₦ 54,200</p>
+            </div>
+
+            <div class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 5.jpeg" alt="boxers"></a>
+                <p class="m-2 text-sm md:text-md truncate">Everyday Men’s Cotton Underwear – 4 in 1 Combo Pack</p>
+                <p class="m-2 text-sm font-semibold text-orange-500">₦ 20,200</p>
+            </div>
+
+            <div class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 6.jpeg" alt="boxers"></a>
+                <p class="m-2 text-sm md:text-md truncate">Signature Men’s Fashion Boxers – 3 Pieces</p>
+                <p class="m-2 text-sm font-semibold text-orange-500">₦ 7,100</p>
+            </div>
+
+            <div class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 7.jpeg" alt="boxers"></a>
+                <p class="m-2 text-sm md:text-md truncate">Affordable Unique Men’s Boxers – 3 Pieces Set</p>
+                <p class="m-2 text-sm font-semibold text-orange-500">₦ 141,800</p>
+            </div>
+
+        </div>
+
+        <!--BACK-->
+        <button
+            class="backBtn hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 transition-transform duration-300 hover:-translate-x-2 hover:bg-gray-100 hover:text-black bg-gray-500/70 text-white px-4 py-2 rounded-full text-md">
+            &lt;
+        </button>
+
+        <!--NEXT-->
+        <button
+            class="nextBtn hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 transition-transform duration-300 hover:translate-x-2 bg-gray-500/70 hover:bg-gray-100 hover:text-black text-white px-4 py-2 rounded-full text-md">
+            &gt;
+        </button>
+
+    </div>
+</div>
+
+
+
+    <!--TOP JEANS PAGES-->
+    <div class="h-fit  bg-white w-full md:w-[97%] md:m-5">
+
+        <!--TOP FIRST HEADER-->
+        <div
+            class="bg-black text-white flex justify-between px-4 items-center h-[30px] w-full md:rounded-t-sm  md:h-[50px]">
+            <h2 class="font-semibold text-sm md:text-lg xl:text-xl">Jeans</h2>
+        </div>
+
+        <!--TOP HEADER-->
+        <div class="relative w-full h-fit cursor-pointer">
+            <div class="slider h-fit m-1 flex overflow-x-auto scrollbar-hide  snap-x snap-mandatory space-x-2 p-2">
+
+                <!--TOP IMAGE JEANS-->
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwae.webp" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">Samsung Galaxy A06 6.7" / ...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 125,500</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 1.jpeg" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">Infinix Smart 10 Plus 6.7" / ...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 125,500</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 11.jpeg" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">Infinix Hot 50 Pro + 6.78" / ...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 242,318</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 12.jpeg" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">itel City 100 7.65mm" Slim ...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 100,500</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 14.jpeg" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">redbeat REDBEAT C1 Tabl...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 95,900</p>
+                </div>
+
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 2.jpeg" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">Samsung Galaxy A07 6.7" ...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 139,310</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 3.jpeg" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">XIAOMI Redmi Note 14 Pro / ...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 568,605</p>
+                </div>
+
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 4.jpeg" alt="Mobile"></a>
+                    <p class="m-2 text-sm md:text-md">TiLECC Android 12 7 inch...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 54,200</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 5.jpeg" alt="Speaker"></a>
+                    <p class="m-2 text-sm md:text-md">Zealot S51 Wireless BT sp...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 20,200</p>
+                </div>
+
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 6.jpeg" alt="Power Bank"></a>
+                    <p class="m-2 text-sm md:text-md">Kingnote 20000mAh Pow..</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 7,100</p>
+                </div>
+
+                <div
+                    class="bg-white h-[15rem] w-[200px] flex-shrink-0 snap-start  md:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.4)] md:rounded-sm">
+                    <a href="#"><img class="rounded-t-lg h-2/3 m-auto" src="./underwear 7.jpeg" alt="Power Bank"></a>
+                    <p class="m-2 text-sm md:text-md">AGM PAD T1 Android 14...</p>
+                    <p class="m-2 text-sm font-semibold text-orange-500">₦ 141,800</p>
+                </div>
+            </div>
+            <!--BACK-->
+            <button
+                class="backBtn hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 transition-transform duration-300 hover:-translate-x-2 hover:bg-gray-100 hover:text-black bg-gray-500/70 text-white px-4 py-2 rounded-full text-md">
+                &lt;
+            </button>
+            <!--NEXT-->
+            <button
+                class="nextBtn hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 transition-transform duration-300 hover:translate-x-2 bg-gray-500/70 hover:bg-gray-100 hover:text-black text-white px-4 py-2 rounded-full text-md">
+                &gt;
+            </button>
+        </div>
+    </div>
+
+    <!--PAGE TWO-->
+    <section id="page2">
+<div class="flex flex-row w-full max-w-full  md:pl-4 md:gap-2 ">
+        <!--FIRST DIV-->
+        <div class="hidden bg-white md:h-fit rounded-md md:block md:w-fit">
+            <!--Categories-->
+            <h5 class="text-sm px-4 mt-2">CATEGORIES</h5>
+            <!--phone text link-->
+            <a class="font-semibold block w-full hover:bg-gray-100 px-4 py-1" href="#page2">Men Fashion</a>
+
+            <!--PHONE & TABLETS SECTIONS-->
+            <div class="text-sm flex flex-col md:h-[30vh] lg:h-[50vh] overflow-y-auto">
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Men's Sportswear</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Fahion Hoodies & Sweatshirts</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Jacket & Coats</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Jeans</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Overalls</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Pants</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Shirts</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Shorts</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Socks</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Suits & Sports Coats</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Underwear</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Pants</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Sweater</a>
+
+            </div>
+
+            <!--BRAND PAGE-->
+            <h3 class="text-sm px-4 font-semibold pt-2 border-t border-gray-500/70">BRAND</h3>
+
+            <!--SEARCH PAGE-->
+            <div class="relative mt-2">
+                <!--INPUT SEARCH-->
+                <label class="p-2 " for="search">
+                    <input class="px-8 py-1 border-gray-400 outline-none border-[1px] w-fit  rounded-full" type="search"
+                        form="search" placeholder="search">
+                </label>
+                <a href="#"><span
+                        class="flex absolute left-4 font-bold  top-1/2 -translate-y-1/2 text-black cursor-pointer">
+                        <i class="bi bi-search"></i>
+                    </span></a>
+            </div>
+
+            <div class="text-sm flex flex-col md:h-[15vh] lg:h-[30vh] overflow-y-auto snap-start snap-mandatory snap-y">
+                <a href="#" class="flex gap-2 items-center px-8 py-2 hover:bg-gray-100">
+                <input type="checkbox" id="brand1" name="brand1" value="ADIDAS" class="w-4 h-4 border-8 border-gray-300 rounded-sm">
+                <p>ADIDAS</p>
+                </a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Ace Elec</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Amor</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Anker</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Apple</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Atouch</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Bebe</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">BEBE TAB</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">BK</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Bontel</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">BoomBest</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Chupez</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">C idea</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Cool Case</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Ddk</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Digifon</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Fashion</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Fire</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Flick</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Flip Cover</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Frezzil</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Full</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Gadget</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">General</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Glass</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Googl Pixel</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Honor</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Huawei</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Infinix</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">itel</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Jbl</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Kolear</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Ladies Everything</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Ldnio</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Leather Case</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Led</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">LED LITE</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Lenovo</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">LINKO</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">LP</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Magnetic</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">MOL</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">New Age</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Nilkin</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Nokia</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Oale</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Obdlink Mx Bluetooth</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Oneplus</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Oppo</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Oraimo</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">P47</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Panasonic</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Philly</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Poco</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Pouch</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Realme</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Remax</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Recrsi</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Rgb</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Samsung</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">SanDisk</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Selfie Stick</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">SHPLUS</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Smartcase</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Sony</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Stickerket</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">T&G</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">T55 SMART WATCH</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Tecno</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">TWS</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">TYPE A1</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Type Z</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Ultra</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Vivo</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">WIRELESS CHARGER</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Wireless Music</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Wireless Stere0</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Wster</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">WUF</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">XIAOMI</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Xundd</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Zealot</a>
+            </div>
+            <!--BORDER DOWN1-->
+            <div class="border-b-[1px] border-gray-400"></div>
+
+            <!--COLOR PAGE-->
+            <h3 class="text-sm px-4 font-semibold mt-2">COLOR</h3>
+
+            <!--ALL COLOR-->
+            <div class="text-sm flex flex-col md:h-[15vh] lg:h-[30vh] overflow-y-auto snap-start snap-mandatory snap-y">
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Beige</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Black</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Blue</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Brown</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Cyan</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Gold</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Green</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Grey</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Orange</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Pink</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Purple</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Red</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Silver</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">white</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">Yellow</a>
+            </div>
+            <!--BORDER DOWN2-->
+           
+
+            <!--DISCOUNT PAGE-->
+            <h3 class="text-sm px-4 font-semibold mt-2 border-t-[1px] border-gray-400">DISCOUNT</h3>
+            <!--TEXT DISCOUNT-->
+            <div class="text-sm flex flex-col">
+                <a class="w-full hover:bg-gray-100 px-8 py-2 border-b-[1px] border-gray-400" href="#">Show only
+                    discounted items</a>
+            </div>
+
+            <!--BRAND PAGE-->
+            <h3 class="text-sm px-4 font-semibold mt-2">MEGAPIXELS</h3>
+
+            <!--SEARCH PAGE-->
+            <div class="relative mt-2">
+                <!--INPUT SEARCH-->
+                <label class="p-2 " for="search">
+                    <input class="px-8 py-1 border-gray-400 outline-none border-[1px] w-fit  rounded-full" type="search"
+                        form="search" placeholder="search">
+                </label>
+                <a href="#"><span
+                        class="flex absolute left-4 font-bold  top-1/2 -translate-y-1/2 text-black cursor-pointer">
+                        <i class="bi bi-search"></i>
+                    </span></a>
+            </div>
+
+            <div class="text-sm flex flex-col md:h-[15vh] lg:h-[30vh] overflow-y-auto snap-start snap-mandatory snap-y">
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">0.3</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">1</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">1.3</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">2</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">2.0</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">4</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">5</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">5.0</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">7</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">8</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">8.0</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">9</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10.0</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">12</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">12.0</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">13</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">13.0</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">14</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">15</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">16</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">16.0</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">20</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">32</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">41.0</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">48</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">50</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">64</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">108</a>
+            </div>
+
+            <!--BORDER DOWN3-->
+            <div class="border-b-[1px] border-gray-400"></div>
+
+            <!--RANGE PAGE-->
+            <div class=" flex justify-between p-2">
+                <h3 class="text-sm px-4 font-semibold mt-2">PRICE (₦)</h3>
+                <h4 class="text-orange-600 hover:bg-orange-100 py-1 px-3 text-md rounded-lg cursor-pointer">Apply</h4>
+            </div>
+
+            <!--INPUT RANGE-->
+            <div class="p-2">
+                <input class="w-full slider-orange" type="range" name="range" id="range">
+            </div>
+            <div class="flex flex-row gap-3 justify-center mb-2">
+
+                <!--INPUT NUMBER1-->
+                <input class="border-[0.80px] border-black w-[110px] outline-none px-2 rounded-sm" min="76"
+                    max="100000000" step="1" value="76" type="number" name="numbre" id="number1">
+
+                <p class="font-bold">-</p>
+
+                <!--INPUT NUMBER2-->
+                <input class="border-[0.80px] border-black w-[110px] outline-none px-2 rounded-sm" min="76"
+                    max="100000000" step="1" value="100000000" type="number" name="numbre" id="number2">
+
+            </div>
+            <!--BORDER DOWN4-->
+            <div class="border-b-[1px] border-gray-400"></div>
+
+
+
+            <!--DISCOUNT BY %-->
+            <a class="font-semibold block w-full hover:bg-gray-100 px-4 py-1" href="#page2">Phone & Tablets</a>
+
+            <!--DISCOUNT BY %-->
+            <div class="text-sm flex flex-col">
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">50% or more</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">40% ot more</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">30% or more</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">20% or more</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 border-b-[1px] border-gray-400" href="#">10% or more</a>
+            </div>
+
+            <!--PRODUCT TYPE PAGE-->
+            <h3 class="text-sm px-4 font-semibold mt-2">PRODUCT TYPE</h3>
+
+            <!--ALL PRODUCT TYPE-->
+            <div class="text-sm flex flex-col md:h-[14vh] lg:h-[30vh] overflow-y-auto snap-start snap-mandatory snap-y">
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Bluetooth Speaker</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Chargers</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Chargers & Cables</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Chargers & Usb Cables</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Earbuds</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Fan</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Headphones</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Headset & Earphones</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">ipad</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Microsoft Window Phones</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Microsoft Window Tablets</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Phones</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Power Banks</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Smartphones</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">Smart Watchs</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">USB Cables & Adapter</a>
+            </div>
+            <!--BORDER DOWN2-->
+            <div class="border-b-[1px] border-gray-400"></div>
+
+
+            <!--RAM PAGE-->
+            <h3 class="text-sm px-4 font-semibold mt-2">RAM</h3>
+
+            <!--ALL RAM-->
+            <div class="text-sm flex flex-col md:h-[14vh] lg:h-[30vh] overflow-y-auto snap-start snap-mandatory snap-y">
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">0.512</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">1</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">1.2</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">2</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">3</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">4</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">6</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">8</a>
+            </div>
+            <!--BORDER DOWN2-->
+            <div class="border-b-[1px] border-gray-400"></div>
+
+
+            <!--RATING BY STAR-->
+            <a class="font-semibold block w-full hover:bg-gray-100 px-4 py-1" href="#page2">Phone & Tablets</a>
+
+            <!--RATING BY STAR-->
+            <div class="text-sm flex flex-col">
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#"> <i
+                        class="bi bi-star-fill text-yellow-500 text-md"></i> <i
+                        class="bi bi-star-fill text-yellow-500 text-md"></i> <i
+                        class="bi bi-star-fill text-yellow-500 text-md"></i> <i
+                        class="bi bi-star-fill text-yellow-500 text-md"></i> <i
+                        class="bi bi-star-fill text-gray-400 text-md"></i> & above</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#"> <i
+                        class="bi bi-star-fill text-yellow-500 text-md"></i> <i
+                        class="bi bi-star-fill text-yellow-500 text-md"></i> <i
+                        class="bi bi-star-fill text-yellow-500 text-md"></i> <i
+                        class="bi bi-star-fill text-gray-400 text-md"></i> <i class="bi bi-star-fill text-gray-400"></i>
+                    & above</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#"> <i
+                        class="bi bi-star-fill text-yellow-500 text-md"></i> <i
+                        class="bi bi-star-fill text-yellow-500 text-md"></i> <i
+                        class="bi bi-star-fill text-gray-400 text-md"></i> <i
+                        class="bi bi-star-fill text-gray-400 text-md"></i> <i
+                        class="bi bi-star-fill text-gray-400 text-md"></i> & above</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 border-b-[1px] border-gray-400" href="#"><i
+                        class="bi bi-star-fill text-yellow-500 text-md"></i> <i
+                        class="bi bi-star-fill text-gray-400 text-md"></i> <i
+                        class="bi bi-star-fill text-gray-400 text-md"></i> <i
+                        class="bi bi-star-fill text-gray-400 text-md"></i> <i
+                        class="bi bi-star-fill text-gray-400 text-md"></i> & above</a>
+            </div>
+
+
+            <!--DISPLAY SIZE PAGE-->
+            <h3 class="text-sm px-4 font-semibold mt-2">DISPLAY SIZE</h3>
+
+            <!--SEARCH PAGE-->
+            <div class="relative mt-2">
+                <!--INPUT SEARCH-->
+                <label class="p-2 " for="search">
+                    <input class="px-8 py-1 border-gray-400 outline-none border-[1px] w-fit  rounded-full" type="search"
+                        form="search" placeholder="search">
+                </label>
+                <a href="#"><span
+                        class="flex absolute left-4 font-bold  top-1/2 -translate-y-1/2 text-black cursor-pointer">
+                        <i class="bi bi-search"></i>
+                    </span></a>
+            </div>
+
+            <div class="text-sm flex flex-col md:h-[15vh] lg:h-[30vh] overflow-y-auto snap-start snap-mandatory snap-y">
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">1</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">1.1</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">1.2</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">1.3</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">1.4</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2" href="#">1.5</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">1.6</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">1.7</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">1.8</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">1.9</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">1.77"</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">2.1</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">2.3</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">2.4</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">2.8"</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">3.0 inch</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">4.7</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">5</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">5.8</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.1</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.2</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.3</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.3"</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.4</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.5</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.6</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.6"</a>
+                <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.7</a>
+                 <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.7"</a>
+                  <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.8</a>
+                   <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.8"</a>
+                    <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.9</a>
+                     <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.9"</a>
+                      <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.67</a>
+                       <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.67"</a>
+                        <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.77</a>
+                         <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.77"</a>
+                          <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.78</a>
+                           <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.78"</a>
+                            <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.83"</a>
+                             <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">6.88</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">7</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">7 inch</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">7 inches</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">7"</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">7'INCHES</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">7.6</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">7.8"</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">7.85 inches</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">7INCHES</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">7inches</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">8</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">8 inches</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">8 INCHES</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">8"</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">8'INCHES</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">8.0"</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">8inch</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">8INCHES</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">9.6</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10</a>
+<a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10 inches</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10 INCHES</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10"</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10.1</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10.1 inch</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10.1 inches</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10.1</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10.2</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10.3</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10.4</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10.5</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10.7</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10INCHES</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10inches</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">10"</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">11</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">11"</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">11.9</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">18.5</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">n/a</a>
+                              <a class="w-full hover:bg-gray-100 px-8 py-2 " href="#">N/A</a>
+                             
+            </div>
+
+            <!--BORDER DOWN3-->
+            <div class="border-b-[1px] border-gray-400"></div>
+
+
+
+        </div>
+
+
+
+
+
+        <!--SECOND DIV-->
+        <div class="w-full rounded-md  md:bg-white md:h-auto md:max-w-[65%] lg:max-w-[76%]">
+            <!--FIRST TEXT HEADER-->
+            <div class=" md:flex-col  md:m-5">
+                <!--FOR DESKTOP VIEW-->
+                <div class="hidden md:text-md md:flex md:justify-between md:items-center md:gap-5 lg:justify-between lg:items-center lg:text-lg">
+                    <h3 class="font-bold">
+                        Phones, Tablets & Accessories
+                        <span class="text-gray-500 sm:text-xs md:text-md font-semibold">(139807 products found)</span>
+                    </h3>
+
+                    <h6 id="btn2"
+                        class="font-semibold cursor-pointer hover:text-orange-500 hover:bg-gray-300 py-2 px-3 rounded-lg transition flex lg:text-sm">
+                        Sort by: Popularity ˅
+                    </h6>
+                </div>
+
+
+                <!-- SCROLLABLE ROW FOR DESKTOP -->
+                <div class=" md:relative">
+
+                    <div
+                        class="hidden slider  md:flex md:flex-row md:items-center md:overflow-x-auto md:flex-nowrap md:snap-x md:snap-mandatory md:space-x-2 mt-1">
+
+                        <!-- Title -->
+                        <h4 class="text-md snap-start whitespace-nowrap">
+                            Related results:
+                        </h4>
+
+                        <!-- Links -->
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Water purification tablets
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md  snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Samsung tablets 2024
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md  snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Kindle tablets for reading
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Tablet for kitchen
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Tablet for seniors
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Fire tablet 7
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Glucosamine and calcium tablets
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Laptop tablet combo
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Leg cramp tablets
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Hydroxyapatite toothpaste tablets
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Android tablet white
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Cleaner for tablet screen
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Best chlorella tablet
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Best tablet for teens
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Samsung tablets with gps
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Tablets under 200
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Tablets with smalletst beze
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Tablets with thin bezel
+                        </a>
+                        <span class="text-black">|</span>
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Tablet with windows 11
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Tablets with barcode scanner
+                        </a>
+                        <span class="text-black">|</span>
+
+                        <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                            href="#">
+                            Tablet with barcode scanner
+                        </a>
+                    </div>
+                    <!--BACK-->
+                    <button
+                        class="backBtn hidden lg:flex absolute left-2 top-1/2 -translate-y-1/2 transition-transform duration-300 hover:-translate-x-2 hover:bg-gray-100 hover:text-black bg-transparent text-white px-4 py-2 rounded-full text-md">
+                        &lt;
+                    </button>
+                    <!--NEXT-->
+                    <button
+                        class="nextBtn hidden lg:flex absolute right-2 top-1/2 -translate-y-1/2 transition-transform duration-300 hover:translate-x-2 bg-transparent hover:bg-gray-100 hover:text-black text-white px-4 py-2 rounded-full text-md">
+                        &gt;
+                    </button>
+                </div>
+
+            </div>
+
+            <!--FIRST BORDER-->
+            <div class="hidden md:block md:border-b-[0.95px] md:border-black md:mb-2"></div>
+
+            <div class="hidden md:flex md:flex-row md:p-1 md:gap-[4px]">
+                <a class="bg-gray-300 px-2 py-1 rounded-lg text-orange-500" href="#">🚚 EXPRESS</a>
+                <a class="bg-gray-300 px-2 py-1 rounded-lg text-gray-600" href="#">Brand ˅</a>
+                <a class="bg-gray-300 px-2 py-1 rounded-lg text-gray-600" href="#">Price ˅</a>
+            </div>
+
+
+            <!--SECOND BORDER-->
+            <div class="hidden md:block md:border-b-[0.95px] md:border-black md:mt-2"></div>
+
+            <!--FOR MOBILE VIEW-->
+            <div class="bg-white flex flex-row p-1 gap-[4px] md:hidden">
+                <a class="bg-gray-300 px-2 py-1 rounded-lg text-sm text-orange-500" href="#">🚚 EXPRESS</a>
+                <a class="bg-gray-300 px-2 py-1 rounded-lg text-gray-600 text-sm" href="#">Brand ˅</a>
+                <a class="bg-gray-300 px-2 py-1 rounded-lg text-gray-600 text-sm" href="#">Price ˅</a>
+            </div>
+
+            <div class="m-2 flex flex-col mb-4 lg:hidden">
+                <h3 class="text-gray-500 text-md">
+                    Phones, Tablets & Accessories
+                </h3>
+
+                <!-- SCROLLABLE ROW FOR MOBILE -->
+                <div
+                    class="flex flex-row  overflow-x-auto flex-nowrap snap-x snap-mandatory  space-x-2 mt-1 md:hidden">
+
+                    <!-- Title -->
+                    <h4 class="text-base snap-start whitespace-nowrap">
+                        Related results:
+                    </h4>
+
+                    <!-- Links -->
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Water purification tablets
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md  snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                        href="#">
+                        Samsung tablets 2024
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md  snap-start whitespace-nowrap border-b border-orange-500 text-orange-500"
+                        href="#">
+                        Kindle tablets for reading
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Tablet for kitchen
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Tablet for seniors
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Fire tablet 7
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Glucosamine and calcium tablets
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Laptop tablet combo
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Leg cramp tablets
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Hydroxyapatite toothpaste tablets
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Android tablet white
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Cleaner for tablet screen
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Best chlorella tablet
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Best tablet for teens
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Samsung tablets with gps
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Tablets under 200
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Tablets with smalletst beze
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Tablets with thin bezel
+                    </a>
+                    <span class="text-black">|</span>
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Tablet with windows 11
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Tablets with barcode scanner
+                    </a>
+                    <span class="text-black">|</span>
+
+                    <a class="text-md snap-start whitespace-nowrap border-b border-orange-500 text-orange-500" href="#">
+                        Tablet with barcode scanner
+                    </a>
+
+                </div>
+            </div>
+
+
+    <!--IMAGE FOR ALL -->
+        <div class="grid grid-cols-2 m-2 sm:grid-cols-3  lg:grid-cols-4 gap-2 md:mt-2">
+
+        <div class="group bg-white rounded-lg w-full h-fit relative pb-12 md:hover:shadow-[0_0_50px_rgba(0,0,0,0.4)] transition">
+
+    <!-- IMAGE -->
+            <a href="#">
+                    <img class="rounded-t-lg w-full" src="/Men boxers.jpg" alt="">
+            </a>
+
+    <!-- TITLE -->
+            <p class="m-1 text-sm px-1">Cloudoon Underwear Comfortable Cotton Boxers Men's Fashion</p>
+
+     <!-- PRICE -->
+            <p class="m-2 text-sm font-bold">₦ 4,521</p>
+
+    <!-- DELIVERY -->
+            <p class="m-2 text-xs font-semibold text-orange-500">S.J🚚 EXPRESS</p>
+
+    <!-- ADD TO CART BUTTON -->
+            <button class="absolute bottom-2 left-0 right-0 mx-2 bg-orange-500 text-white py-2 rounded-md hidden md:group-hover:block">Add to cart</button>
+
+        </div>
+
+
+
+
+        <div class="group bg-white rounded-lg w-full h-fit relative pb-12 md:hover:shadow-[0_0_50px_rgba(0,0,0,0.4)] transition">
+
+    <!-- IMAGE -->
+            <a href="#">
+                    <img class="rounded-t-lg w-full" src="/Black hoodie.jpg" alt="">
+            </a>
+
+    <!-- TITLE -->
+            <p class="m-1 text-xs px-1">Black Hoodie</p>
+
+     <!-- PRICE -->
+            <p class="m-2 text-sm font-bold">₦ 14,521</p>
+
+    <!-- DELIVERY -->
+            <p class="m-2 text-xs font-semibold text-orange-500">S.J🚚 EXPRESS</p>
+
+    <!-- ADD TO CART BUTTON -->
+            <button class="absolute bottom-2 left-0 right-0 mx-2 bg-orange-500 text-white py-2 rounded-md hidden md:group-hover:block">Add to cart</button>
+
+        </div>
+
+
+
+        <div class="group bg-white rounded-lg w-full h-fit relative pb-12 md:hover:shadow-[0_0_50px_rgba(0,0,0,0.4)] transition">
+
+    <!-- IMAGE -->
+            <a href="#">
+                    <img class="rounded-t-lg w-full" src="/Blue jeans.jpg" alt="">
+            </a>
+
+    <!-- TITLE -->
+            <p class="m-1 text-xs px-1">Blue jeans </p>
+
+     <!-- PRICE -->
+            <p class="m-2 text-sm font-bold">₦ 4,521</p>
+
+    <!-- DELIVERY -->
+            <p class="m-2 text-xs font-semibold text-orange-500">S.J🚚 EXPRESS</p>
+
+    <!-- ADD TO CART BUTTON -->
+            <button class="absolute bottom-2 left-0 right-0 mx-2 bg-orange-500 text-white py-2 rounded-md hidden md:group-hover:block">Add to cart</button>
+
+        </div>
+
+
+        <div class="group bg-white rounded-lg w-full h-fit relative pb-12 md:hover:shadow-[0_0_50px_rgba(0,0,0,0.4)] transition">
+
+    <!-- IMAGE -->
+            <a href="#">
+                    <img class="rounded-t-lg w-full" src="/Danami longsleeves.jpg" alt="">
+            </a>
+
+    <!-- TITLE -->
+            <p class="m-1 text-xs px-1">Guixia Air39 Wireless Bluetooth 5.3 in Ear Transparent Earphones</p>
+
+     <!-- PRICE -->
+            <p class="m-2 text-sm font-bold">₦ 4,521</p>
+
+    <!-- DELIVERY -->
+            <p class="m-2 text-xs font-semibold text-orange-500">S.J🚚 EXPRESS</p>
+
+    <!-- ADD TO CART BUTTON -->
+            <button class="absolute bottom-2 left-0 right-0 mx-2 bg-orange-500 text-white py-2 rounded-md hidden md:group-hover:block">Add to cart</button>
+
+        </div>
+
+
+        <div class="group bg-white rounded-lg w-full h-fit relative pb-12 md:hover:shadow-[0_0_50px_rgba(0,0,0,0.4)] transition">
+
+    <!-- IMAGE -->
+            <a href="#">
+                    <img class="rounded-t-lg w-full" src="/Men boxers.jpg" alt="">
+            </a>
+
+    <!-- TITLE -->
+            <p class="m-1 text-xs px-1">Guixia Air39 Wireless Bluetooth 5.3 in Ear Transparent Earphones</p>
+
+     <!-- PRICE -->
+            <p class="m-2 text-sm font-bold">₦ 4,521</p>
+
+    <!-- DELIVERY -->
+            <p class="m-2 text-xs font-semibold text-orange-500">S.J🚚 EXPRESS</p>
+
+    <!-- ADD TO CART BUTTON -->
+            <button class="absolute bottom-2 left-0 right-0 mx-2 bg-orange-500 text-white py-2 rounded-md hidden md:group-hover:block">Add to cart</button>
+
+        </div>
+
+
+        <div class="group bg-white rounded-lg w-full h-fit relative pb-12 md:hover:shadow-[0_0_50px_rgba(0,0,0,0.4)] transition">
+
+    <!-- IMAGE -->
+            <a href="#">
+                    <img class="rounded-t-lg w-full" src="/Men boxers.jpg" alt="">
+            </a>
+
+    <!-- TITLE -->
+            <p class="m-1 text-xs px-1">Guixia Air39 Wireless Bluetooth 5.3 in Ear Transparent Earphones</p>
+
+     <!-- PRICE -->
+            <p class="m-2 text-sm font-bold">₦ 4,521</p>
+
+    <!-- DELIVERY -->
+            <p class="m-2 text-xs font-semibold text-orange-500">S.J🚚 EXPRESS</p>
+
+    <!-- ADD TO CART BUTTON -->
+            <button class="absolute bottom-2 left-0 right-0 mx-2 bg-orange-500 text-white py-2 rounded-md hidden md:group-hover:block">Add to cart</button>
+
+        </div>
+
+
+        <div class="group bg-white rounded-lg w-full h-fit relative pb-12 md:hover:shadow-[0_0_50px_rgba(0,0,0,0.4)] transition">
+
+    <!-- IMAGE -->
+            <a href="#">
+                    <img class="rounded-t-lg w-full" src="/Men boxers.jpg" alt="">
+            </a>
+
+    <!-- TITLE -->
+            <p class="m-1 text-xs px-1">Guixia Air39 Wireless Bluetooth 5.3 in Ear Transparent Earphones</p>
+
+     <!-- PRICE -->
+            <p class="m-2 text-sm font-bold">₦ 4,521</p>
+
+    <!-- DELIVERY -->
+            <p class="m-2 text-xs font-semibold text-orange-500">S.J🚚 EXPRESS</p>
+
+    <!-- ADD TO CART BUTTON -->
+            <button class="absolute bottom-2 left-0 right-0 mx-2 bg-orange-500 text-white py-2 rounded-md hidden md:group-hover:block">Add to cart</button>
+
+        </div>
+
+
+        <div class="group bg-white rounded-lg w-full h-fit relative pb-12 md:hover:shadow-[0_0_50px_rgba(0,0,0,0.4)] transition">
+
+    <!-- IMAGE -->
+            <a href="#">
+                    <img class="rounded-t-lg w-full" src="/Men boxers.jpg" alt="">
+            </a>
+
+    <!-- TITLE -->
+            <p class="m-1 text-xs px-1">Guixia Air39 Wireless Bluetooth 5.3 in Ear Transparent Earphones</p>
+
+     <!-- PRICE -->
+            <p class="m-2 text-sm font-bold">₦ 4,521</p>
+
+    <!-- DELIVERY -->
+            <p class="m-2 text-xs font-semibold text-orange-500">S.J🚚 EXPRESS</p>
+
+    <!-- ADD TO CART BUTTON -->
+            <button class="absolute bottom-2 left-0 right-0 mx-2 bg-orange-500 text-white py-2 rounded-md hidden md:group-hover:block">Add to cart</button>
+
+        </div>
+
+
+
+                <div class="group bg-white rounded-lg w-full h-fit relative pb-12 md:hover:shadow-[0_0_50px_rgba(0,0,0,0.4)] transition">
+
+    <!-- IMAGE -->
+            <a href="#">
+                    <img class="rounded-t-lg w-full" src="/Men boxers.jpg" alt="">
+            </a>
+
+    <!-- TITLE -->
+            <p class="m-1 text-xs px-1">Guixia Air39 Wireless Bluetooth 5.3 in Ear Transparent Earphones</p>
+
+     <!-- PRICE -->
+            <p class="m-2 text-sm font-bold">₦ 4,521</p>
+
+    <!-- DELIVERY -->
+            <p class="m-2 text-xs font-semibold text-orange-500">S.J🚚 EXPRESS</p>
+
+    <!-- ADD TO CART BUTTON -->
+            <button class="absolute bottom-2 left-0 right-0 mx-2 bg-orange-500 text-white py-2 rounded-md hidden md:group-hover:block">Add to cart</button>
+
+        </div>
+
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!--FOOTER PAGE-->
+    <!-- FOOTER -->
+    <div class="h-fit w-full bg-black flex flex-col pt-14">
+        <div
+            class="bg-transparent sm:px-4 justify-between lg:px-10 pb-8 sm:flex-wrap lg:flex-nowrap flex flex-col shrink-0 grow sm:flex sm:flex-row h-full w-full gap-2">
+            <div class="text-gray-50 w-full sm:w-fit lg:w-1/5 h-fit flex flex-col p-2 space-y-2">
+                <img src="/logo_main-removebg-preview.png" class="h-[6rem] w-[5rem] m-auto">
+                <p class="text-lg font-semibold text-gray-300">Subscribe</p>
+                <p class="text-gray-300">Get 10% off your first order</p>
+                <form class="flex">
+                    <input type="email" placeholder="Enter your email"
+                        class="w-3/4 sm:w-4/5 bg-transparent p-2 h-[50px] border border-gray-100 border-r-0 placeholder:text-sm text-lg outline-0 ">
+                    <button class="w-1/4 border border-gray-100 border-l-0 p-2 h-[50px]"><i
+                            class="bi bi-send text-xl m-auto"></i></button>
+                </form>
+            </div>
+
+            <!--CALL OR SUPPOURT PAGE-->
+            <div class="text-gray-50 w-full sm:w-1/2 lg:w-1/5 space-y-2 h-fit p-2 pt-8 sm:pt-4">
+                <h1 class="text-lg font-bold text-gray-300">Support</h1>
+                <p href="#" class="hover:text-blue-500 w-fit text-gray-300">Odume Obosi, Anambra state, Nigeria.</p>
+                <p href="#" class="hover:text-blue-500 w-fit text-gray-300">stanleychiemelie72@gmail.com</p>
+                <p href="#" class="hover:text-blue-500 w-fit text-gray-300">okolichimaobi@gmail.com</p>
+                <p href="#" class="hover:text-blue-500 w-fit text-gray-300">+234 916 184 5818</p>
+                <p href="#" class="hover:text-blue-500 w-fit text-gray-300">+234 704 971 3444</p>
+            </div>
+
+            <!--ACCOUNT PAGE-->
+            <div class="text-gray-50 w-full sm:w-1/2 lg:w-1/5 flex flex-col space-y-2 h-fit p-2 pt-8">
+                <h1 class="text-lg font-bold text-gray-300">Account</h1>
+                <a href="#" class="hover:text-blue-500 w-fit text-gray-300">My account</a>
+                <a href="#" class="hover:text-blue-500 w-fit text-gray-300">Login / Register</a>
+                <a href="#" class="hover:text-blue-500 w-fit text-gray-300">Cart</a>
+                <a href="#" class="hover:text-blue-500 w-fit text-gray-300">Wishlist</a>
+                <a href="#" class="hover:text-blue-500 w-fit text-gray-300">My Shop</a>
+            </div>
+
+            <!--PRIVACY-->
+            <div class="text-gray-50 w-full sm:w-1/3 lg:w-1/5 flex flex-col pt-8 p-2 space-y-2">
+                <h1 class="text-lg font-bold text-gray-300">Quick Link</h1>
+                <a href="#" class="hover:text-blue-500 w-fit text-gray-300">Privacy Policy</a>
+                <a href="#" class="hover:text-blue-500 w-fit text-gray-300">Terms Of Use</a>
+                <a href="#" class="hover:text-blue-500 w-fit text-gray-300">FAQ</a>
+                <a href="#" class="hover:text-blue-500 w-fit text-gray-300">Contact</a>
+            </div>
+
+
+            <!--DOWNLOAD PAGE-->
+            <div
+                class="text-gray-300 w-full lg:w-fit flex flex-col pt-8 p-2 space-y-2 justify-center align-center items-center">
+                <h1 class="text-lg font-bold">Download App</h1>
+                <p>Save $3 for App New User only</p>
+                <div>
+                    <!-- APP DOWNLOAD-->
+                    <div class="flex flex-row gap-2">
+                        <!--QR CODE-->
+                        <div>
+                            <a href="#"><i class="bi bi-qr-code text-8xl hover:text-blue-500"></i></a>
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <div class="flex flex-row gap-2 whitespace-nowrap">
+                                <i class="bi bi-google-play text-3xl"></i>
+                                <div class="flex flex-col hover:text-blue-500">
+                                    <a href="#" class="text-[0.7rem]">Get it on</a>
+                                    <a href="#" class="text-lg">Google Play</a>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-row gap-2 whitespace-nowrap">
+                                <i class="bi bi-apple text-3xl"></i>
+                                <div class="flex flex-col hover:text-blue-500">
+                                    <a href="#" class="text-[0.7rem]">Download on the</a>
+                                    <a href="#" class="text-lg">Google Play</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--COPYRIGHT PAGE-->
+        <div class="flex justify-center items-center w-full border-t-[1px] border-gray-500 pt-8">
+            <p class=" text-gray-50 w-full text-center text-[0.7rem] md:text-sm"><i
+                    class="bi bi-c-circle text-base my-auto"></i> Copyright S.J shopping. All rights reserved</p>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
+</body>
+</html>
